@@ -30,8 +30,18 @@ const ProjectsList = ({projects}) => {
       isCancelled = true
     }
   }, [projects])
+  if (!allImagesLoaded) {
+    return (
+      <div className="projects-loader" aria-label="Loading projects" role="status">
+        <span className="projects-loader__dot" />
+        <span className="projects-loader__dot" />
+        <span className="projects-loader__dot" />
+      </div>
+    )
+  }
+
   return (
-    <div className={`projects-container ${allImagesLoaded ? 'is-loaded' : ''}`} style={{ visibility: allImagesLoaded ? 'visible' : 'hidden' }}>
+    <div className={`projects-container ${allImagesLoaded ? 'is-loaded' : ''}`}>
       {projects.map((project) => (
         <ProjectCard key={project.id} project={project} allImagesLoaded={allImagesLoaded} />
       ))}
