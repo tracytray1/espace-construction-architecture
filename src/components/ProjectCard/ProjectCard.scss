@@ -1,0 +1,110 @@
+// Utilisation de transform au lieu d'opacity pour de meilleures performances
+.project-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  cursor: pointer;
+  will-change: transform;
+  transform: translateZ(0);
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    // Transition douce pour l'apparition
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    &.loaded {
+      opacity: 1;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    // Utilisation de transform au lieu d'opacity pour de meilleures performances
+    transform: translateZ(0) scale(0);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.visible {
+      transform: translateZ(0) scale(1);
+    }
+  }
+
+  .project-body-container {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+    // Optimisation : utilisation de transform au lieu d'opacity + translateY
+    transform: translateZ(0) translateY(20px);
+    opacity: 0;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+
+    &.visible {
+      transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+
+    h2 {
+      margin: 0;
+      // Optimisation texte
+      text-rendering: optimizeSpeed;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+
+  // Optimisation : préchargement des transitions au focus pour le clavier
+  &:focus-within {
+    .overlay {
+      transform: translateZ(0) scale(1);
+    }
+
+    .project-body-container {
+      transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .project-item {
+    .image-container {
+      height: 150px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}
