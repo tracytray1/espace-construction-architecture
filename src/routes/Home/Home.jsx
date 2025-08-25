@@ -1,12 +1,12 @@
 import ProjectsList from '../../components/ProjectsList/ProjectsList'
-import { projects } from '../../projects-data'
+import { PROJECTS_DATA } from '../../projects-data'
 import './Home.scss'
 
 const Home = () => {
 
   return (
     <div>
-      <ProjectsList projects={projects}/>
+      <ProjectsList projects={PROJECTS_DATA}/>
     </div>
   )
 }
