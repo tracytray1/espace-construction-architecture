@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import './ProjectsList.scss'
 import ProjectCard from '../ProjectCard/ProjectCard'
 
 const ProjectsList = ({projects}) => {
@@ -30,7 +31,7 @@ const ProjectsList = ({projects}) => {
     }
   }, [projects])
   return (
-    <div className="projects-container" style={{ visibility: allImagesLoaded ? 'visible' : 'hidden' }}>
+    <div className={`projects-container ${allImagesLoaded ? 'is-loaded' : ''}`} style={{ visibility: allImagesLoaded ? 'visible' : 'hidden' }}>
       {projects.map((project) => (
         <ProjectCard key={project.id} project={project} />
       ))}
