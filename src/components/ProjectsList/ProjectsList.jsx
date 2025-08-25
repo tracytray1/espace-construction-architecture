@@ -29,13 +29,8 @@ const ProjectsList = ({projects}) => {
       isCancelled = true
     }
   }, [projects])
-
-  if (!allImagesLoaded) {
-    return null
-  }
-
   return (
-    <div className="projects-container">
+    <div className="projects-container" style={{ visibility: allImagesLoaded ? 'visible' : 'hidden' }}>
       {projects.map((project) => (
         <ProjectCard key={project.id} project={project} />
       ))}
