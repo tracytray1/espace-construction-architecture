@@ -23,7 +23,7 @@ const ProjectCard = ({ project, allImagesLoaded }) => {
       onMouseLeave={handleMouseLeave}
     >
       <div className="image-container">
-      <Link to={`/projects/${id}`}>
+      <Link to={`/projets/${id}`}>
         <img
           src={imageUrl}
           alt={title}

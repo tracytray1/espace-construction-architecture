@@ -1,17 +1,17 @@
 import { useParams } from 'react-router-dom';
-import projectsData from '../../projects-data';
+import { PROJECTS_DATA } from '../../projects-data';
 
 const Projet = () => {
   const { id } = useParams();
-  const project = projectsData.find(p => p.id === parseInt(id));
+  const foundProject = PROJECTS_DATA.find(p => p.id === parseInt(id));
 
-  if (!project) return <p>Projet non trouvé</p>;
+  if (!foundProject) return <p>Projet non trouvé</p>;
 
   return (
     <div>
-      <h1>{project.title}</h1>
-      <img src={project.imageUrl} alt={project.title} />
-      <p>{project.texte}</p>
+      <h1>{foundProject.title}</h1>
+      <img src={foundProject.imageUrl} alt={foundProject.title} />
+      <p>{foundProject.texte}</p>
     </div>
   );
 }
