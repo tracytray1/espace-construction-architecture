@@ -1,4 +1,4 @@
-const ProjectCard = ({project}) => {
+const ProjectCard = ({project, allImagesLoaded}) => {
   const {imageUrl, title} = project;
   return (
     <div className='project-item'>
@@ -6,6 +6,8 @@ const ProjectCard = ({project}) => {
         className="background-image"
         style={{
           backgroundImage: `url(${imageUrl})`,
+          opacity: allImagesLoaded ? 1 : 0,
+          transition: 'opacity 300ms ease'
         }}
       />
       <div className="project-body-container">

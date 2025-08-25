@@ -33,7 +33,7 @@ const ProjectsList = ({projects}) => {
   return (
     <div className={`projects-container ${allImagesLoaded ? 'is-loaded' : ''}`} style={{ visibility: allImagesLoaded ? 'visible' : 'hidden' }}>
       {projects.map((project) => (
-        <ProjectCard key={project.id} project={project} />
+        <ProjectCard key={project.id} project={project} allImagesLoaded={allImagesLoaded} />
       ))}
     </div>
   )
