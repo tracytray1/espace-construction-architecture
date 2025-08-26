@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
+import LogoEspaceConstructionSansTexte from '../../assets/logo-espace-construction-blanc.svg?react';
+
 
 import './ProjectCard.scss'
 
 const ProjectCard = ({ project, allImagesLoaded }) => {
-  const { imageUrl, title, id } = project;
-
+  const { imageUrl, projet, ville, id } = project;
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -26,7 +27,7 @@ const ProjectCard = ({ project, allImagesLoaded }) => {
       <Link to={`/projets/${id}`}>
         <img
           src={imageUrl}
-          alt={title}
+          alt={projet}
           width={800} height={600}
           className={`project-image ${allImagesLoaded ? 'loaded' : ''}`}
         />
@@ -36,10 +37,11 @@ const ProjectCard = ({ project, allImagesLoaded }) => {
           aria-hidden="true"
         />
 
-
         <div className={`project-body-container ${isHovered ? 'visible' : ''}`}>
-          <h2>{title}</h2>
-        </div>
+            <LogoEspaceConstructionSansTexte/>
+            <p>{projet}</p>
+            <p>{ville}</p>
+          </div>
         </Link>
       </div>
     </div>
