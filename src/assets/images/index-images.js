@@ -39,19 +39,16 @@ export { default as immeubleDivisionLeclerc1 } from './projects/Bourget/bourget-
 export { default as immeubleDivisionLeclercPlans1 } from './projects/Bourget/bourget-plans-1.jpg';
 export { default as immeubleDivisionLeclercPlans2 } from './projects/Bourget/bourget-plans-2.jpg';
 
-
 export { default as maisonAganahi }  from './homepage/maison-aganahi-abomey-calavi-benin.png';
 export { default as maisonAganahi1 } from './projects/Abomey/abomey-1.jpg';
 export { default as maisonAganahi2 } from './projects/Abomey/abomey-2.png';
 export { default as maisonAganahi3 } from './projects/Abomey/abomey-3.jpg';
 export { default as maisonAganahiPlans } from './projects/Abomey/plans-abomey.jpg';
 
-
 export { default as maisonDuclos }  from './homepage/maison-duclos-douy-la-ramee.jpg';
 export { default as maisonDuclos1 } from './projects/Douy-La-Ramee/douy-la-ramee-1.jpg';
 export { default as maisonDuclos2 } from './projects/Douy-La-Ramee/douy-la-ramee-2.jpg';
 export { default as maisonDuclosPlans } from './projects/Douy-La-Ramee/douy-la-ramee-plans.jpg';
-
 
 export { default as maisonFayol }  from './homepage/maison-fayol-dampmart.jpg';
 export { default as maisonFayol1 } from './projects/Dampmart/dampmart-1.jpg';
@@ -115,7 +112,6 @@ export { default as villasDesVarennes }  from './homepage/villas-des-varennes-sa
 export { default as villasDesVarennes1 } from './projects/SGLA/sgla-1.jpg';
 export { default as villasDesVarennes2 } from './projects/SGLA/sgla-2.jpg';
 export { default as villasDesVarennesPlans } from './projects/SGLA/sgla-plans.jpg';
-
 
 //Missing
 export { default as immeubleChoisy } from './homepage/immeuble-choisy-alfortville.png';
