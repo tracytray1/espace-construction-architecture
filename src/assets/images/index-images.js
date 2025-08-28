@@ -116,6 +116,6 @@ export { default as villasDesVarennesPlans } from './projects/SGLA/sgla-plans.jp
 //Missing
 export { default as immeubleChoisy } from './homepage/immeuble-choisy-alfortville.png';
 
-export { default as immeubleBtb } from './homepage/immeuble-de-bureaux-btb-baie-mahault.jpg';
+export { default as immeubleBtb } from './homepage/immeuble-de-bureaux-baie-mahault.jpg';
 
 export { default as immeubleCerisiers } from './homepage/immeuble-des-cerisiers-thorigny-sur-marne.jpg';
