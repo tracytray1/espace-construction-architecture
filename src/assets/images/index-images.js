@@ -34,7 +34,7 @@ export { default as gitesFonrose6 } from './projects/Marie-Galante/marie-galante
 export { default as gitesFonrosePlans } from './projects/Marie-Galante/marie-galante-plans.jpg';
 
 
-export { default as immeubleDivisionLeclerc }  from './homepage/immeuble-division-leclerc-le-bourget.jpg';
+export { default as immeubleDivisionLeclerc } from './homepage/immeuble-division-leclerc-le-bourget.jpg';
 export { default as immeubleDivisionLeclerc1 } from './projects/Bourget/bourget-1.jpg';
 export { default as immeubleDivisionLeclercPlans1 } from './projects/Bourget/bourget-plans-1.jpg';
 export { default as immeubleDivisionLeclercPlans2 } from './projects/Bourget/bourget-plans-2.jpg';
