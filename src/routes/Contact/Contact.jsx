@@ -1,7 +1,19 @@
+import FormInput from '../../components/FormInput/FormInput'
+import './Contact.scss'
+
 const Contact = () => {
   return (
-    <div>
-      <h1>Contact</h1>
+    <div className="contact-page">
+      <div className="contact-header">
+        <h1 className="contact-title">Contact</h1>
+        <p className="contact-subtitle">
+          Remplissez simplement le formulaire ci-dessous, nous reviendrons vers vous au plus vite.
+          Aucune information personnelle ne sera transmise à des tiers.
+        </p>
+      </div>
+      <div className="contact-form-wrapper">
+        <FormInput />
+      </div>
     </div>
   )
 }

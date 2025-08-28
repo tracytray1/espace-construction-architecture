@@ -8,7 +8,7 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <Fragment>
-      <div className="navigation">
+      <div className="navigation" id='wrap'>
         <Link className="logo-container" to="/">
           <LogoEspaceConstruction className="logo" />
         </Link>
