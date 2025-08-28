@@ -1,8 +1,11 @@
 .navigation {
   display: flex;
   height: 100px;
-  width: 100%;
+  max-width: 1200px;
   justify-content: space-between;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
   margin-bottom: 25px;
 
   .logo-container {

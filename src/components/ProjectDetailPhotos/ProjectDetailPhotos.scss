@@ -1,0 +1,10 @@
+.projet-detail_photos {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}

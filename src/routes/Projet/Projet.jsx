@@ -1,6 +1,10 @@
 import { useParams } from 'react-router-dom';
 import { PROJECTS_DATA } from '../../projects-data';
-
+import ProjectInfo from "../../components/ProjectInfo/ProjectInfo";
+import ProjectDetailPhotos from "../../components/ProjectDetailPhotos/ProjectDetailPhotos";
+import ProjectHeader from "../../components/ProjectHeader/ProjectHeader";
+import ProjectHero from "../../components/ProjectHero/ProjectHero";
+import ProjectFooter from '../../components/ProjectFooter/ProjectFooter'
 import './Projet.scss'
 
 const Projet = () => {
@@ -11,23 +15,18 @@ const Projet = () => {
 
   return (
     <div className='projet-detail_wrapper'>
-      <div className='projet-detail_hero'>
-        <img
-          src={foundProject.imageUrl}
-          alt={foundProject.title}
-          className="projet-detail_image"
-        />
-      </div>
-      <div className='projet-detail_header'>
-        <p>{foundProject.projet}</p>
-        <p>{foundProject.ville}</p>
-      </div>
+
+      <ProjectHero imageUrl={foundProject.imageUrl} title={foundProject.title} />
+      <ProjectHeader project={foundProject.projet} city={foundProject.ville} description={foundProject.description} />
+
       <div className='projet-detail_body'>
         <p>{foundProject.texte}</p>
       </div>
-      <div className='projet-detail_info'></div>
-      <div className='projet-detail_footer'></div>
 
+      <ProjectDetailPhotos photos={foundProject.imagesProjet} project={foundProject.projet} />
+      <ProjectInfo foundProject={foundProject} />
+
+      <ProjectFooter />
     </div>
   );
 }

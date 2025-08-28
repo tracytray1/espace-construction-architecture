@@ -1,0 +1,19 @@
+  .projet-detail_header {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+
+    .projet-detail_header-info {
+      display: flex;
+      column-gap: 10px;
+      align-items: center;
+
+      .projet-detail_nom {}
+
+      .projet-detail_ville {
+        color: grey;
+      }
+    }
+  }

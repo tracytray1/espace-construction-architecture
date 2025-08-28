@@ -1,8 +1,10 @@
 .projects-container {
   contain: layout style paint;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); // 3 colonnes égales
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); // 3 colonnes égales
   gap: 1rem; // espace entre les cartes
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 1rem;
 }
 

@@ -1,0 +1,19 @@
+.projet-detail_info {
+  display: flex;
+  padding: 30px 0px;
+  line-height: 3;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  justify-content: center;
+  border-block: 1px solid black;
+  margin-block: 30px;
+
+  .projet-detail_info-item {
+    display: flex;
+    column-gap: 15px;
+
+    dt {
+      font-weight: bold;
+    }
+  }
+}
