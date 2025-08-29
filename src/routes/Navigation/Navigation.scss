@@ -33,6 +33,11 @@
       font-size: 20px;
       color: #999; // par défaut gris
       text-decoration: none;
+      transition: color 0.3s ease;
+
+        &:hover {
+          color: black; // au survol → noir
+        }
 
         &.active {
           color: black; // le lien actif est noir
