@@ -3,7 +3,7 @@ import './FormInput.scss';
 const FormInput = () => {
   return (
     <form className="contact-form">
-      <h2>Demande de projet</h2>
+      <h2>Contact</h2>
 
       <div className="row">
         <label>

@@ -8,6 +8,14 @@ import './ProjectCard.scss'
 const ProjectCard = ({ project, allImagesLoaded }) => {
   const { imageUrl, projet, ville, id } = project;
   const [isHovered, setIsHovered] = useState(false);
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClickMobile = (e) => {
+    if (window.innerWidth <= 768 && !isActive) {
+      e.preventDefault();
+      setIsActive(true);
+      }
+    }
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -24,13 +32,13 @@ const ProjectCard = ({ project, allImagesLoaded }) => {
       onMouseLeave={handleMouseLeave}
     >
       <div className="image-container">
-      <Link to={`/projets/${id}`}>
-        <img
-          src={imageUrl}
-          alt={projet}
-          width={800} height={600}
-          className={`project-image ${allImagesLoaded ? 'loaded' : ''}`}
-        />
+        <Link to={`/projets/${id}`} onClick={handleClickMobile}>
+          <img
+            src={imageUrl}
+            alt={projet}
+            width={800} height={600}
+            className={`project-image ${allImagesLoaded ? 'loaded' : ''}`}
+          />
 
         <div
           className={`overlay ${isHovered ? 'visible' : ''}`}
