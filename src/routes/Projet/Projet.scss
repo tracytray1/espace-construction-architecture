@@ -6,85 +6,8 @@
   padding-left: 1rem;
   padding-right: 1rem;
 
-
-  .projet-detail_hero {
-    width: 100%;
-    height: 70vh;
-    padding-bottom: 30px;
-    overflow: hidden;
-
-    .projet-detail_image {
-      width: 100%;
-      object-fit: cover;
-      height: 100%;
-    }
-  }
-  .projet-detail_header {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 25px;
-
-      .projet-detail_header-info{
-        display: flex;
-        column-gap: 10px;
-        align-items: center;
-
-        .projet-detail_nom {
-
-
-        }
-        .projet-detail_ville {
-          color: grey;
-        }
-      }
-
-
-  }
   .projet-detail_body p {
     white-space: pre-line;
     padding-bottom: 50px;
-  }
-
-  .projet-detail_photos{
-    display: block;
-    width: 100%;
-    overflow: hidden;
-
-    img {
-      width: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .projet-detail_info {
-    display: flex;
-    padding: 30px 0px;
-    line-height: 3;
-    flex-wrap: wrap;
-    column-gap: 50px;
-    justify-content: center;
-    border-block: 1px solid black;
-    padding-block: 20px;
-
-
-    .projet-detail_info-item {
-      display: flex;
-      column-gap: 15px;
-        dt {
-          font-weight: bold;
-        }
-    }
-  }
-
-  .projet-footer {
-    cursor: pointer;
-  }
-}
-
-@media (max-width: 768px) {
-  .project-detail_hero {
-    height: 30vh;
   }
 }

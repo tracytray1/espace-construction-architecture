@@ -1,5 +1,5 @@
 import { useState, Fragment } from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet, NavLink } from 'react-router-dom';
 import LogoEspaceConstruction from '../../assets/logo-espace-construction.svg?react';
 import './Navigation.scss'
 
@@ -9,9 +9,9 @@ const Navigation = () => {
   return (
     <Fragment>
       <div className="navigation" id='wrap'>
-        <Link className="logo-container" to="/">
+        <NavLink className="logo-container" to="/">
           <LogoEspaceConstruction className="logo" />
-        </Link>
+        </NavLink>
         {/* Bouton hamburger (visible seulement sur mobile) */}
         <div
           className={`hamburger ${isMenuOpen ? 'active' : ''}`}
@@ -24,12 +24,20 @@ const Navigation = () => {
 
         {/* Liens navigation */}
         <div className={`nav-links-container ${isMenuOpen ? 'open' : ''}`}>
-          <Link className="nav-link" to="/" onClick={() => setIsMenuOpen(false)}>
-            References
-          </Link>
-          <Link className="nav-link" to="/contact" onClick={() => setIsMenuOpen(false)}>
+          <NavLink
+            to="/"
+            className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Références
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+            onClick={() => setIsMenuOpen(false)}
+          >
             Contact
-          </Link>
+          </NavLink>
         </div>
       </div>
       <Outlet />

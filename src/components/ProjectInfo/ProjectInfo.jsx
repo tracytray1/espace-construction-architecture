@@ -1,5 +1,6 @@
 import './ProjectInfo.scss'
 
+
 const ProjectInfo = ({foundProject}) => {
   return (
     <div className='projet-detail_info'>

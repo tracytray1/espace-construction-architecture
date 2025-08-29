@@ -1,12 +1,18 @@
-  .projet-detail_hero {
+  .project-detail_hero {
     width: 100%;
     height: 70vh;
     padding-bottom: 30px;
     overflow: hidden;
 
-    .projet-detail_image {
+    .project-detail_image {
       width: 100%;
       object-fit: cover;
       height: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .project-detail_hero {
+      height: 40vh;
     }
   }

@@ -25,7 +25,6 @@ const Projet = () => {
 
       <ProjectDetailPhotos photos={foundProject.imagesProjet} project={foundProject.projet} />
       <ProjectInfo foundProject={foundProject} />
-
       <ProjectFooter />
     </div>
   );

@@ -2,11 +2,11 @@ import './ProjectHero.scss'
 
 const ProjectHero = ({ imageUrl, title }) => {
   return (
-    <div className='projet-detail_hero'>
+    <div className='project-detail_hero'>
       <img
         src={imageUrl}
         alt={title}
-        className="projet-detail_image"
+        className="project-detail_image"
       />
     </div>
   )
