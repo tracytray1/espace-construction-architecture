@@ -46,10 +46,14 @@ const ProjectCard = ({ project, allImagesLoaded }) => {
         />
 
         <div className={`project-body-container ${isHovered ? 'visible' : ''}`}>
+            <div className='project-body-container-logo'>
             <LogoEspaceConstructionSansTexte/>
+          </div>
+          <div>
             <p>{projet}</p>
             <p>{ville}</p>
           </div>
+        </div>
         </Link>
       </div>
     </div>
