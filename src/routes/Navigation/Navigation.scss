@@ -81,6 +81,12 @@
       display: flex;
     }
 
+    /* Ajuster la taille du logo sur mobile */
+    .logo-container {
+      width: clamp(180px, 220px, 280px);
+      padding: 3px;
+    }
+
     .nav-links-container {
       position: absolute;
       top: 90px;
@@ -97,6 +103,18 @@
       &.open {
         right: 0; // menu visible
       }
+    }
+  }
+
+  /* Styles pour très petits écrans (comme Samsung Galaxy S20) */
+  @media (max-width: 480px) {
+    .logo-container {
+      width: clamp(140px, 180px, 220px);
+      padding: 2px;
+    }
+
+    .hamburger {
+      margin-left: 10px;
     }
   }
 }

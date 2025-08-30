@@ -5,7 +5,7 @@ import LogoEspaceConstructionSansTexte from '../../assets/logo-espace-constructi
 
 import './ProjectCard.scss'
 
-const ProjectCard = ({ project, allImagesLoaded }) => {
+const ProjectCard = ({ project, allImagesLoaded, index }) => {
   const { imageUrl, projet, ville, id } = project;
   const [isHovered, setIsHovered] = useState(false);
   const [isActive, setIsActive] = useState(false);
@@ -27,7 +27,7 @@ const ProjectCard = ({ project, allImagesLoaded }) => {
 
   return (
     <div
-      className='project-item'
+      className={`project-item ${allImagesLoaded ? 'loaded' : ''}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
