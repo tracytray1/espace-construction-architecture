@@ -45,9 +45,14 @@ const ProjectsList = ({projects}) => {
 
 
   return (
-    <div className={`projects-container ${allImagesLoaded ? 'is-loaded' : ''}`} style={{ visibility: allImagesLoaded ? 'visible' : 'hidden' }}>
-      {projects.map((project) => (
-        <ProjectCard key={project.id} project={project} allImagesLoaded={allImagesLoaded} />
+    <div className={`projects-container ${allImagesLoaded ? 'is-loaded' : ''}`}>
+      {projects.map((project, index) => (
+        <ProjectCard
+          key={project.id}
+          project={project}
+          allImagesLoaded={allImagesLoaded}
+          index={index}
+        />
       ))}
     </div>
   );

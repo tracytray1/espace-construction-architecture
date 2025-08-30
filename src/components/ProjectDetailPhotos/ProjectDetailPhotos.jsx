@@ -11,7 +11,7 @@ const ProjectDetailPhotos = ({photos, project}) => {
           alt={`photo du projet ${project}`}
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.9, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.2 }}
         />
       ))}

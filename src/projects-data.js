@@ -145,8 +145,8 @@ Le positionnement des containers et la disposition des parois participent à la 
     "title": "Villa Mahroum Andalu",
     "imageUrl": images.villaMahroum,
     "imagesProjet": [
+      images.villaMahroumPlans,
       images.villaMahroum1,
-      images.villaMahroumPlans
     ],
     "projet": "Villa Mahroum",
     "description": "Construction neuve",

@@ -8,10 +8,48 @@
     .projet-detail_header-info {
       display: flex;
       column-gap: 10px;
-      align-items: center;
+      align-items: baseline;
 
-      .projet-detail_ville {
-        color: grey;
-      }
+    .projet-detail_ville {
+      color: grey;
     }
   }
+
+  .projet-detail_header-description {
+    display: flex;
+    align-items: baseline;
+
+    .projet-detail_description {
+      transition: font-style 0.3s ease; // transition optionnelle
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column; // s’applique directement au header
+    align-items: flex-start;
+    gap: 10px;
+
+    .projet-detail_header-info {
+        flex-direction: column; // nom + ville empilés
+        align-items: flex-start;
+        gap: 4px;
+
+        .projet-detail_nom {
+          font-size: 1.4rem;
+        }
+
+        .projet-detail_ville {
+          font-size: 0.95rem;
+        }
+      }
+
+      .projet-detail_header-description {
+        width: 100%;
+      }
+
+      .projet-detail_description {
+        font-size: 0.95rem;
+        font-style: italic;
+    }
+  }
+}
