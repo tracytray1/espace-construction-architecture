@@ -4,6 +4,7 @@ import ProjectInfo from "../../components/ProjectInfo/ProjectInfo";
 import ProjectDetailPhotos from "../../components/ProjectDetailPhotos/ProjectDetailPhotos";
 import ProjectHeader from "../../components/ProjectHeader/ProjectHeader";
 import ProjectHero from "../../components/ProjectHero/ProjectHero";
+import InternalLinks from "../../components/InternalLinks/InternalLinks";
 import ProjectFooter from '../../components/ProjectFooter/ProjectFooter'
 import './Projet.scss'
 
@@ -25,6 +26,7 @@ const Projet = () => {
 
       <ProjectDetailPhotos photos={foundProject.imagesProjet} project={foundProject.projet} />
       <ProjectInfo foundProject={foundProject} />
+      <InternalLinks allProjects={PROJECTS_DATA} foundProject={foundProject} />
       <ProjectFooter />
     </div>
   );
