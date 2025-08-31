@@ -8,7 +8,6 @@ const Contact = () => {
         <h1 className="contact-title">Formulaire de contact</h1>
         <p className="contact-subtitle">
           Remplissez simplement le formulaire ci-dessous, nous reviendrons vers vous au plus vite.
-          Aucune information personnelle ne sera transmise à des tiers.
         </p>
       </div>
       <div className="contact-form-wrapper">
