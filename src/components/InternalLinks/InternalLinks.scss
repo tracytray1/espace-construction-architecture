@@ -1,9 +1,163 @@
 .internal-links {
-max-width: 1200px;
-height: 300px;
+  margin: 4rem 0;
+  padding: 0 1rem;
 
+  h2 {
+    margin-bottom: 2rem;
+  }
 
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+// Composant ProjectCard interne avec exactement le même design que la homepage
+.internal-project-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  cursor: pointer;
+  will-change: transform;
+  transform: translateZ(0);
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .project-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    transform: translateZ(0) scale(0);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+
+    &.visible {
+      transform: translateZ(0) scale(1);
+    }
+  }
+
+  .project-body-container {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+    transform: translateZ(0) translateY(20px);
+    opacity: 0;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    column-gap: 15px;
+
+    &.visible {
+      transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+
+    .project-body-container-logo {
+      max-width: 40px;
+    }
+
+    p {
+      margin: 0;
+      text-rendering: optimizeSpeed;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+
+  // Optimisation : préchargement des transitions au focus pour le clavier
+  &:focus-within {
+    .overlay {
+      transform: translateZ(0) scale(1);
+    }
+
+    .project-body-container {
+      transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+// Responsive design
+@media (max-width: 1024px) {
   .internal-links__list {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+  }
 
+  .internal-links h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .internal-links {
+    margin: 3rem 0;
+    padding: 0 0.75rem;
+
+    &__list {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.75rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .internal-project-item {
+    .image-container {
+      height: 150px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .internal-links {
+    margin: 2rem 0;
+    padding: 0 0.5rem;
+
+    &__list {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .internal-project-item {
+    .image-container {
+      height: 160px;
+    }
   }
 }
