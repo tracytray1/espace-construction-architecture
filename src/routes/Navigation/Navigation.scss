@@ -84,25 +84,34 @@
       padding: 3px;
     }
 
-    .nav-links-container {
-      position: absolute;
-      display: none;
-      top: 90px;
-      right: -100%; // menu caché par défaut
-      background-color: white;
-      flex-direction: column;
-      width: 200px;
-      padding: 1rem;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-      z-index: 1;
-      height: 150px;
+        .nav-links-container {
+          position: absolute;
+          top: 90px;
+          right: 0;
+          display: flex; // toujours présent
+          flex-direction: column;
+          width: 200px;
+          padding: 1rem;
+          background-color: white;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
+          z-index: 1000;
 
-      &.open {
-        right: 0;
-        display: flex; // menu visible
-        transition: right 0.3s ease-in-out;
-      }
-    }
+          /* état fermé */
+          transform: translateX(110%); // hors écran
+          opacity: 0;
+          visibility: hidden; // évite la navigation au clavier
+          pointer-events: none; // évite les clics
+          transition: transform .3s ease-in-out, opacity .2s ease;
+          will-change: transform, opacity;
+        }
+
+        .nav-links-container.open {
+          transform: translateX(0);
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto;
+          height: 110px;
+        }
   }
 
   @media (max-width: 480px) {
