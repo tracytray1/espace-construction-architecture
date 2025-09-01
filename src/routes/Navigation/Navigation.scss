@@ -73,15 +73,12 @@
     }
   }
 
-  /* Styles mobile */
   @media (max-width: 768px) {
 
-    /* Afficher le bouton hamburger sur mobile */
     .hamburger {
       display: flex;
     }
 
-    /* Ajuster la taille du logo sur mobile */
     .logo-container {
       width: clamp(180px, 220px, 280px);
       padding: 3px;
@@ -89,6 +86,7 @@
 
     .nav-links-container {
       position: absolute;
+      display: none;
       top: 90px;
       right: -100%; // menu caché par défaut
       background-color: white;
@@ -96,17 +94,17 @@
       width: 200px;
       padding: 1rem;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-      transition: right 0.3s ease-in-out;
       z-index: 1;
       height: 150px;
 
       &.open {
-        right: 0; // menu visible
+        right: 0;
+        display: flex; // menu visible
+        transition: right 0.3s ease-in-out;
       }
     }
   }
 
-  /* Styles pour très petits écrans (comme Samsung Galaxy S20) */
   @media (max-width: 480px) {
     .logo-container {
       width: clamp(140px, 180px, 220px);
