@@ -4,9 +4,18 @@ import './ProjectFooter.scss'
 
 const ProjectHero = () => {
   return (
-    <div className='projet-footer'>
-      <p> TOP
-        <a href="#" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><ChevronUp size={22} />
+    <div className='project-footer'>
+      <p>
+        <a
+          href="#"
+          onClick={(e) => {
+          e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" })
+          }}
+          className='project-footer-link'
+          >
+          <ChevronUp className="footer-icon" size={22} />
+          <span className='footer-text'>HAUT DE PAGE</span>
         </a>
       </p>
     </div>

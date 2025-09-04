@@ -3,116 +3,84 @@ import * as images from './assets/images/index-images';
 
 export const PROJECTS_DATA =
  [
-  {
-    "id": 1,
-    "title": "Pavillon Petit Havre Le Gosier Guadeloupe",
-    "imageUrl": images.pavillonPetitHavre,
-    "imagesProjet": [
-      images.pavillonPetitHavrePlans1,
-      images.pavillonPetitHavrePlans2,
-      images.pavillonPetitHavre1,
-      images.pavillonPetitHavre2,
-      images.pavillonPetitHavre2,
-      images.pavillonPetitHavre3
-    ],
-    "projet": "Pavillon Petit Havre",
-    "description": "Construction secondaire",
-    "ville": "Le Gosier, Guadeloupe",
-    "programme" : "Pavillon secondaire",
-    "surfaceHabitable": "80.95 m²",
-    "Client": "SPIRE",
-    "mission":"Sous-traitance AVP - PC",
-    "livraison": "Janvier 2025",
-     "texte": `Le pavillon du Gosier est une illustration du rôle central que peuvent prendre les réflexions relatives à la structure durant les phases de conception du projet.
+    {
+      "id": 1,
+      "title": "Maison Aganahi Abomey Calavi",
+      "imageUrl": images.maisonAganahi,
+      "imagesProjet": [
+        images.maisonAganahiPlans,
+        images.maisonAganahi1,
+        images.maisonAganahi2,
+        images.maisonAganahi3,
+      ],
+      "projet": "Maison Aganahi",
+      "description": "Construction neuve",
+      "site": "Abomey Calavi, Bénin",
+      "ville": "Abomey Calavi",
+      "programme": "Maison individuelle",
+      "surfaceHabitable": "194,84 m²",
+      "maitriseOuvrage": "Aldwin Aganahi",
+      "mission": "Étude d'avant projet",
+      "livraison": "Janvier 2018",
+      "texte": `Le propriétaire d'un terrain situé dans une zone résidentielle d'Abomey-Calavi, au Bénin, nous a confié l'étude d'un projet de maison individuelle. La mission s'est limitée à l'avant-projet, une équipe locale devant assurer les dernières résolutions constructives ainsi que le suivi de chantier sur place.
 
-Le maître d’ouvrage souhaite réaliser une seconde construction en fond de parcelle, en aval de la maison existante. Pour des questions économiques et d’organisation du chantier, nous avons décidé d’utiliser le container comme choix de mode constructif pour ce projet. La nature de la structure et la rapidité de la mise en œuvre présentent des avantages. Il est étanche à l’air et à l’eau, robuste, durable et aisément transformable.
+    La maison s'implante sur une parcelle régulière et relativement plate, d'une profondeur de 30 m et d'une largeur de 10 m. Pour répondre à cette géométrie, le plan du logement s'organise en trois carrés successifs de 10 m par 10 m. La partie centrale accueille le cœur du logement : l'espace de vie en double hauteur, traversant et surplombé par une mezzanine. Côté rue, cet espace s'ouvre sur une terrasse extérieure légèrement surélevée par rapport à la cour d'entrée, prolongeant la cuisine de manière à la fois spatiale et fonctionnelle. De l'autre côté, il se prolonge vers une terrasse ouverte sur un jardin aux proportions équilibrées.
 
-Composer avec un mode constructif préfabriqué suppose, dans une trajectoire parfois inverse au processus de projet courant, d’anticiper les réflexions de son accroche au sol, des marges d’aménagement qu’il permet et de la manière dont on peut l’adapter au climat local en fonction de l’analyse de sa structure. Cette étude intervient avant même de définir précisément le programme du logement.
+    La transition intérieur-extérieur est assurée par une façade épaisse conçue comme un filtre au vent, favorisant la ventilation naturelle dans l'ensemble du logement. Des jalousies et ventelles en partie basse permettent de réguler les entrées d'air traversant successivement le séjour et la cuisine dans le sens du vent. La façade sur rue est largement ouverte pour renforcer l'aspiration, tandis qu'une écope de toiture en partie centrale conditionne également la circulation d'air depuis un point haut lorsque la cuisine et l'entrée sont fermées.
 
-Le terrain du projet du Gosier se situe en amont d’une vallée s’étendant jusqu’à la mer. La construction surplombe une forte pente proche des 40 degrés. Le logement la longe et se développe vers la grande vue.
+    Les réflexions liées à la conception bioclimatique du logement ont largement déterminé la coupe. L'étage est composé de deux volumes décalés et espacés qui accueillent les chambres. Ce jeu de décalage, perçu côté rue comme l'élément structurant de la façade, confère à l'ensemble une dynamique particulière. Les volumes traités en surplomb, associés au balcon et à la casquette, renforcent l'impression d'un étage flottant au-dessus du rez-de-chaussée.`
+    },
+    {
+      "id": 2,
+      "title": "Villa De Lutiis Thorigny-sur-Marne",
+      "imageUrl": images.villaDeLutiis,
+      "imagesProjet": [
+        images.villaDeLutiisPlans,
+        images.villaDeLutiis1,
+        images.villaDeLutiis2,
+        images.villaDeLutiis3,
+      ],
+      "projet": "Villa De Lutiis",
+      "description": "Construction neuve",
+      "ville": "Thorigny-sur-Marne",
+      "programme": "Maison individuelle",
+      "surfaceHabitable": "141.19 m²",
+      "montantTravaux": "247 500.00 €",
+      "maitriseOuvrage": "Ronan de Lutiis",
+      "mission": "Complète avec direction des travaux",
+      "livraison": "Juin 2024",
+      "texte": `Un ami de l'agence récemment propriétaire d'un terrain situé à Thorigny-sur-Marne en région parisienne nous a chargés de concevoir une maison individuelle. Il nous a confié la mission complète de maîtrise d'œuvre, comprenant les études architecturales à toutes les échelles ainsi que le suivi des travaux.
 
-Un intérêt du dispositif de coupe consiste à situer la construction dans la pente en considérant une partie de la toiture comme le prolongement de la maison existante. Trois containers de 20 et 40 pieds seront soudés entre eux par les angles pour former le corps de ce logement.
+    La maison se développe sur un terrain en longueur relativement plat. Le plan du logement se repose sur le pignon nord où sont placées les pièces de service afin de libérer l'espace sur une travée centrale traversante. Le logement donne sur deux massifs boisés à l'est comme à l'ouest. Les volumes du projet s'organisent autour d'une double hauteur de géométrie cubique située face au jardin. Elle apporte de la lumière au cœur d'un logement relativement profond en raison de la géométrie de la parcelle.
 
-La partie ouest de la construction sera implantée sous le niveau du terrain naturel. Des terres seront déblayées et un ouvrage de soutènement en béton sera réalisé pour les retenir. Cet ouvrage fera office d’ancrage pour la construction et permettra de répondre aux sollicitations du vent cyclonique et des tremblements de terre sur l’édifice.
+    À l'ouest, une terrasse couverte fait le lien entre le séjour et la rue. L'étage ne se structure pas à l'aplomb du rez-de-chaussée. Il est traité comme un élément flottant, parfois en retrait ou parfois en saillie. Il se compose des chambres et d'une mezzanine donnant sur le salon via la double hauteur. La lecture de la maison depuis la rue est dominée par des lignes horizontales marquées par la volumétrie de l'étage. À l'arrière la maison paraît plus compacte et cubique, dominée par la double hauteur du séjour.
 
-Les trois containers solidaires surplombent ensuite la pente du terrain. Les cubes d’encastrement de leur ossature sont soudés directement aux têtes de pieux de fondation lorsque la hauteur le permet. Lorsque la distance est trop importante entre le logement et le sol naturel, les pieux sont articulés en tête et prolongés par des IPE.
+    La construction présente une structure simple, les portées sont courtes. Le mode constructif choisi est la brique creuse doublée d'un isolant laine de verre en ITE. Ce projet de construction a été confié à l'entreprise générale REM BAT, partenaire de longue date de l'agence. La qualité principale de ce projet réside dans l'équilibre entre la dimension économique de la construction permise par l'emploi de techniques traditionnelles et la richesse spatiale que suppose un langage moderne.`
+    },
+    {
+      "id": 3,
+      "title": "Maison Duclos Douy-la-Ramée",
+      "imageUrl": images.maisonDuclos,
+      "imagesProjet": [
+        images.maisonDuclosPlans,
+        images.maisonDuclos1,
+        images.maisonDuclos2,
+      ],
+      "projet": "Maison Duclos",
+      "description": "Extension maison individuelle",
+      "ville": "Douy-la-Ramée",
+      "programme": "Extension maison",
+      "surfaceHabitable": "48.50 m²",
+      "montantTravaux": "74 500.00 €",
+      "maitriseOuvrage": "M. et Mme Duclos",
+      "mission": "Complète avec direction des travaux",
+      "livraison": "Décembre 2023",
+      "texte": `M. et Mme Duclos nous ont confié l'étude d'un projet d'extension de maison individuelle à Douy-la-Ramée en Seine-et-Marne. Le logement se situe dans un lotissement comprenant des propriétés disposant de beaux espaces de jardins.
 
-La terrasse prolonge le logement de plain-pied en dehors du volume des containers et nécessite une structure complémentaire pour la soutenir. L’enjeu principal de ce projet réside dans sa capacité à traiter le logement comme un belvédère orienté vers la grande vue.
+    La densité relativement faible de la parcelle nous a permis de travailler sur une extension du côté d'un pignon aveugle. La façade est élargie et l'extension ne rajoute pas de contrainte à l'ensoleillement de la maison. Elle se compose d'une suite parentale ouverte par un coulissant sur une pièce de vie prolongeant le séjour existant. Le décalage du volume de l'extension par rapport à l'existant est l'occasion de placer une pergola faisant le lien entre l'espace de vie et le jardin. La piscine et la plage faite d'un deck en matériau composite composent un espace se reposant sur le séjour de la maison et son extension.
 
-Les containers adaptables au logement présentent des caractéristiques dimensionnelles précises. L’enjeu de l’aménagement consistait à trouver un équilibre entre liberté de conception et contrainte constructive.
-
-Une fois soudés aux angles, les containers sont solidaires : on peut supprimer certains panneaux longitudinaux sans fragiliser le contreventement de l’édifice.
-
-Une caractéristique du plan consistait à doubler l’épaisseur habitable pour le séjour et la chambre en supprimant en partie les panneaux de tôle au centre du logement. Le contreventement est assuré dans les deux sens par les parois périphériques adossées à la pente.
-
-Le positionnement des containers et la disposition des parois participent à la composition en plan en orientant les espaces principaux du logement vers la diagonale. Ces espaces s’appuient sur les façades placées dos à la pente et s’ouvrent vers la vallée.
-    `
-  },
-  {
-    "id": 2,
-    "title": "Villa Bien Desiré Saint François Guadeloupe",
-    "imageUrl": images.villaBienDesire,
-    "imagesProjet": [
-      images.villaBienDesirePlans,
-      images.villaBienDesire1,
-      images.villaBienDesire2,
-      images.villaBienDesire3,
-      images.villaBienDesire4,
-      images.villaBienDesire5,
-      images.villaBienDesire6,
-      images.villaBienDesire7,
-      images.villaBienDesire8
-    ],
-    "projet": "Villa Bien Desiré",
-    "description": "Construction neuve",
-    "ville": "Saint François, Guadeloupe",
-    "programme": "Maison individuelle",
-    "surfaceHabitable": "164.58 m²",
-    "montantTravaux": "279 450.00 €",
-    "maitriseOuvrage": "Pauline Noyer",
-    "mission": "AVP PC DCE",
-    "livraison": "Janvier 2025",
-    "texte": `Les logements individuels en Guadeloupe sont en grande partie des dérivés formels de la case créole. Cet habitat est en héritage du carbet amérindien, fait de branches soutenant des chevrons se prolongeant jusqu'au sol. Il est très ouvert et situé dans des sites exposés aux vents dominants pour profiter d'une ventilation naturelle par brassage de l'air.
-
-    La case est initialement conçue en gaulette recouverte de torchis. Après avoir abrité les premiers colons et les esclaves, elle devient à l'abolition la forme d'habitat principale pour la population rurale. Elle fait principalement office de chambre à coucher, les fonctions de service ou les fonctions d'accueil du logement sont transposées dans des espaces extérieurs, dans une relation au jardin de subsistance et au jardin décoratif, comme la cuisine située sous le vent ou la galerie attenante à la case.
-
-    Vers le milieu du XIXe siècle, la forme construite de la case évolue par l'apport des charpentiers de marine. Elle est dès lors conçue en ossature et charpente bois assemblée par tenon et mortaise. La charpente bois est donc empreinte d'une culture dont la dimension symbolique est propre à l'évolution de l'habitat dans l'île. Ce mode constructif caractérisera la forme du logement de Saint-François. Il participera à la symbolique du projet en devenant le marqueur d'une forme d'interprétation de la case créole, dans une recherche de continuité de la culture constructive.
-
-    L'édifice s'implantera sur une parcelle relativement plane, de géométrie simple et dont la surface est à la mesure du programme établi par le maître d'ouvrage. Elle permet d'étendre la construction de plain-pied, de réaliser de larges et profonds espaces de terrasse couverts et des débords de toiture protégeant les façades de la pluie et du soleil. La toiture joue un rôle prépondérant dans la conception de logements en Guadeloupe en constituant le principal support d'usages le plus souvent projetés à l'extérieur.
-
-    Ce projet est simple, c'est la charpente qui dicte sa forme. Nous sommes partis de ce principe pour imaginer le schéma de conception général du projet. Deux parties de la construction composées du séjour et des chambres forment une équerre. En entrant à l'intersection des volumes, on découvre une charpente traditionnelle supportant la toiture de ce corps principal. La terrasse est quant à elle couverte par une structure plus basse constituée de chevrons et d'arêtiers reposant sur des poteaux à section circulaire. Cette charpente prolonge l'axe du séjour, se retourne et couvre également le salon et la cuisine.
-
-    Le passage d'un type de charpente à un autre, d'une lecture verticale du volume du corps principal à un espace s'étendant horizontalement donne du relief à la transition intérieure-extérieure. Elle intègre des espaces traités en interprétation des modes d'habiter, le salon et la cuisine sont ainsi considérés comme des espaces de transition entre le jardin et le cœur du logement regroupant les chambres. De l'extérieur, la couverture de la terrasse semble discontinue par rapport à la charpente principale, à l'image de la galerie couverte juxtaposée à la case créole.`
-  },
-  {
-    "id": 3,
-    "title": "Gîtes Fonrose",
-    "imageUrl": images.gitesFonrose,
-    "imagesProjet": [
-      images.gitesFonrosePlans,
-      images.gitesFonrose1,
-      images.gitesFonrose2,
-      images.gitesFonrose3,
-      images.gitesFonrose4,
-      images.gitesFonrose5,
-      images.gitesFonrose6
-    ],
-    "projet": "Gîtes Fonrose",
-    "description": "Construction neuve",
-    "ville": "Marie-Galante, Guadeloupe",
-    "programme": "Gîtes tourisme",
-    "surfaceHabitable": "126.54 m²",
-    "client": "SPIRE",
-    "mission": "Sous-traitance ESQ",
-    "livraison": "Novembre 2022",
-    "texte": `En partenariat avec l'agence d'architecture SPIRE, il nous a été confié l'esquisse d'un projet de gîte sur l'île de Marie-Galante. Trois pavillons similaires partagent une parcelle vaste sur un plateau entouré d'arbres. Ils sont disposés en quinconce de façon à préserver des espaces de jardins attenants à chaque logement.
-
-    Le plan d'un pavillon est formé par l'intersection de deux volumes, l'un regroupant les espaces intérieurs plus isolés (chambre, salon, salle de bain) et l'autre délimitant une grande terrasse couverte. Le moment de la transition intérieur-extérieur est marqué par un plafond et un plancher qui courent, dans une recherche de continuité. À l'usage, cette continuité est renforcée par une cuisine qui se prolonge sur la partie nord de la terrasse couverte. À l'étage on trouve la chambre des enfants, elle-même prolongée par une loggia donnant sur le salon.
-
-    La conception de logements dans les zones tropicales peut permettre de travailler sur des espaces très en relation avec l'extérieur sans nécessiter de complexité constructive. La température étant élevée toute l'année, il n'est pas question d'isoler plus que nécessaire les logements dans la mesure où une bonne protection solaire et une gestion de la ventilation naturelle sont mises en place.
-
-    La structure du pavillon est en ossature bois avec un bardage simple peau. Les travées structurelles sont réduites ce qui permet de limiter les sections des éléments en bois pour la structure des murs, des planchers et de la charpente. L'essentiel des éléments de menuiseries sont faits de jalousies à lames pleines. Bien qu'imaginé en cohérence avec le budget estimé, le projet est resté au stade d'esquisse et n'a pour le moment pas abouti.`
-  },
+    La toiture-terrasse végétalisée est accessible depuis les chambres de l'étage. La construction présente une structure simple, les portées sont courtes. Le mode constructif choisi est la brique creuse doublée d'un isolant laine de verre en ITE. Ce projet de construction a été confié à l'entreprise générale REM BAT, partenaire de longue date de l'agence. Le budget alloué à ce projet étant limité, il a été conçu en deux temps. La première phase actuellement terminée comprend les parties intérieures de l'extension et une seconde phase permettra de réaliser les parties couvrantes extérieures.`
+    },
   {
     "id": 4,
     "title": "Villa Illemassene Bois-Le-Roi",
@@ -129,16 +97,9 @@ Le positionnement des containers et la disposition des parois participent à la 
     "client": "ACSTETUDE",
     "mission": "Sous-traitance imagerie",
     "livraison": "Janvier 2023",
-    "texte": `Il a été confié à l'agence d'architecture ACSTETUDE la conception d'une maison individuelle à Bois-le-Roi en Seine-et-Marne.
-      Notre mission consistait à participer à la conception, à travailler sur la maquette numérique et à réaliser l'imagerie des parties
-      principales de la maison.
+    "texte": `Il a été confié à l'agence d'architecture ACSTETUDE la conception d'une maison individuelle à Bois-le-Roi en Seine-et-Marne. Notre mission consistait à participer à la conception, à travailler sur la maquette numérique et à réaliser l'imagerie des parties principales de la maison.
 
-      Le projet se développe au centre d'une grande parcelle ouverte sur un espace boisé. La large allée centrale pavée donne un aspect
-      monumental au projet. La maison est faite de lignes horizontales et verticales organisées par les avants toits, les balcons et les auvents
-      et de volumes verticaux structurés par les trumeaux et les superpositions des ouvertures entre le rdc et l'étage. Le volume intérieur est
-      très ouvert. Le séjour est en double hauteur et un balcon intérieur périphérique le surplombe. L'escalier est traité comme un élément
-      sculpturale qui filtre les accès au chambre du rdc. La cuisine est travaillée comme une alcôve vis à vis de l'ample volume du séjour. La
-      maison est très ouverte sur la partie avant du jardin, où se situe un bassin séparée de l'allée par une bande de plantation. `
+      Le projet se développe au centre d'une grande parcelle ouverte sur un espace boisé. La large allée centrale pavée donne un aspect monumental au projet. La maison est faite de lignes horizontales et verticales organisées par les avants toits, les balcons et les auvents et de volumes verticaux structurés par les trumeaux et les superpositions des ouvertures entre le rdc et l'étage. Le volume intérieur est très ouvert. Le séjour est en double hauteur et un balcon intérieur périphérique le surplombe. L'escalier est traité comme un élément sculpturale qui filtre les accès au chambre du rdc. La cuisine est travaillée comme une alcôve vis à vis de l'ample volume du séjour. La maison est très ouverte sur la partie avant du jardin, où se situe un bassin séparée de l'allée par une bande de plantation. `
   },
   {
     "id": 5,
@@ -192,89 +153,121 @@ Le positionnement des containers et la disposition des parois participent à la 
   },
   {
     "id": 7,
-    "title": "Maison Aganahi Abomey Calavi",
-    "imageUrl": images.maisonAganahi,
+    "title": "Pavillon Petit Havre Le Gosier Guadeloupe",
+    "imageUrl": images.pavillonPetitHavre,
     "imagesProjet": [
-      images.maisonAganahiPlans,
-      images.maisonAganahi1,
-      images.maisonAganahi2,
-      images.maisonAganahi3,
+      images.pavillonPetitHavrePlans1,
+      images.pavillonPetitHavre1,
+      images.pavillonPetitHavre2,
+      images.pavillonPetitHavre3,
+      images.pavillonPetitHavrePlans2,
+
     ],
-    "projet": "Maison Aganahi",
-    "description": "Construction neuve",
-    "site" : "Abomey Calavi, Bénin",
-    "ville": "Abomey Calavi",
-    "programme": "Maison individuelle",
-    "surfaceHabitable": "194,84 m²",
-    "maitriseOuvrage": "Aldwin Aganahi",
-    "mission": "Étude d'avant projet",
-    "livraison": "Janvier 2018",
-    "texte": `Le propriétaire d'un terrain situé dans une zone résidentielle d'Abomey-Calavi, au Bénin, nous a confié l'étude d'un projet de maison individuelle. La mission s'est limitée à l'avant-projet, une équipe locale devant assurer les dernières résolutions constructives ainsi que le suivi de chantier sur place.
+    "projet": "Pavillon Petit Havre",
+    "description": "Construction secondaire",
+    "ville": "Le Gosier, Guadeloupe",
+    "programme": "Pavillon secondaire",
+    "surfaceHabitable": "80.95 m²",
+    "Client": "SPIRE",
+    "mission": "Sous-traitance AVP - PC",
+    "livraison": "Janvier 2025",
+    "texte": `Le pavillon du Gosier est une illustration du rôle central que peuvent prendre les réflexions relatives à la structure durant les phases de conception du projet.
 
-    La maison s'implante sur une parcelle régulière et relativement plate, d'une profondeur de 30 m et d'une largeur de 10 m. Pour répondre à cette géométrie, le plan du logement s'organise en trois carrés successifs de 10 m par 10 m. La partie centrale accueille le cœur du logement : l'espace de vie en double hauteur, traversant et surplombé par une mezzanine. Côté rue, cet espace s'ouvre sur une terrasse extérieure légèrement surélevée par rapport à la cour d'entrée, prolongeant la cuisine de manière à la fois spatiale et fonctionnelle. De l'autre côté, il se prolonge vers une terrasse ouverte sur un jardin aux proportions équilibrées.
+    Le maître d’ouvrage souhaite réaliser une seconde construction en fond de parcelle, en aval de la maison existante. Pour des questions économiques et d’organisation du chantier, nous avons décidé d’utiliser le container comme choix de mode constructif pour ce projet. La nature de la structure et la rapidité de la mise en œuvre présentent des avantages. Il est étanche à l’air et à l’eau, robuste, durable et aisément transformable.
 
-    La transition intérieur-extérieur est assurée par une façade épaisse conçue comme un filtre au vent, favorisant la ventilation naturelle dans l'ensemble du logement. Des jalousies et ventelles en partie basse permettent de réguler les entrées d'air traversant successivement le séjour et la cuisine dans le sens du vent. La façade sur rue est largement ouverte pour renforcer l'aspiration, tandis qu'une écope de toiture en partie centrale conditionne également la circulation d'air depuis un point haut lorsque la cuisine et l'entrée sont fermées.
+    Composer avec un mode constructif préfabriqué suppose, dans une trajectoire parfois inverse au processus de projet courant, d’anticiper les réflexions de son accroche au sol, des marges d’aménagement qu’il permet et de la manière dont on peut l’adapter au climat local en fonction de l’analyse de sa structure. Cette étude intervient avant même de définir précisément le programme du logement.
 
-    Les réflexions liées à la conception bioclimatique du logement ont largement déterminé la coupe. L'étage est composé de deux volumes décalés et espacés qui accueillent les chambres. Ce jeu de décalage, perçu côté rue comme l'élément structurant de la façade, confère à l'ensemble une dynamique particulière. Les volumes traités en surplomb, associés au balcon et à la casquette, renforcent l'impression d'un étage flottant au-dessus du rez-de-chaussée.`
-  },
-  {
-    "id": 8,
-    "title": "Villa De Lutiis Thorigny-sur-Marne",
-    "imageUrl": images.villaDeLutiis,
-    "imagesProjet": [
-      images.villaDeLutiisPlans,
-      images.villaDeLutiis1,
-      images.villaDeLutiis2,
-      images.villaDeLutiis3,
-    ],
-    "projet": "Villa De Lutiis",
-    "description": "Construction neuve",
-    "ville": "Thorigny-sur-Marne",
-    "programme": "Maison individuelle",
-    "surfaceHabitable": "141.19 m²",
-    "montantTravaux": "247 500.00 €",
-    "maitriseOuvrage": "Ronan de Lutiis",
-    "mission": "Complète avec direction des travaux",
-    "livraison": "Juin 2024",
-    "texte": `Un ami de l'agence récemment propriétaire d'un terrain situé à Thorigny-sur-Marne en région parisienne nous a chargés de concevoir une maison individuelle. Il nous a confié la mission complète de maîtrise d'œuvre, comprenant les études architecturales à toutes les échelles ainsi que le suivi des travaux.
+    Le terrain du projet du Gosier se situe en amont d’une vallée s’étendant jusqu’à la mer. La construction surplombe une forte pente proche des 40 degrés. Le logement la longe et se développe vers la grande vue.
 
-    La maison se développe sur un terrain en longueur relativement plat. Le plan du logement se repose sur le pignon nord où sont placées les pièces de service afin de libérer l'espace sur une travée centrale traversante. Le logement donne sur deux massifs boisés à l'est comme à l'ouest. Les volumes du projet s'organisent autour d'une double hauteur de géométrie cubique située face au jardin. Elle apporte de la lumière au cœur d'un logement relativement profond en raison de la géométrie de la parcelle.
+    Un intérêt du dispositif de coupe consiste à situer la construction dans la pente en considérant une partie de la toiture comme le prolongement de la maison existante. Trois containers de 20 et 40 pieds seront soudés entre eux par les angles pour former le corps de ce logement.
 
-    À l'ouest, une terrasse couverte fait le lien entre le séjour et la rue. L'étage ne se structure pas à l'aplomb du rez-de-chaussée. Il est traité comme un élément flottant, parfois en retrait ou parfois en saillie. Il se compose des chambres et d'une mezzanine donnant sur le salon via la double hauteur. La lecture de la maison depuis la rue est dominée par des lignes horizontales marquées par la volumétrie de l'étage. À l'arrière la maison paraît plus compacte et cubique, dominée par la double hauteur du séjour.
+    La partie ouest de la construction sera implantée sous le niveau du terrain naturel. Des terres seront déblayées et un ouvrage de soutènement en béton sera réalisé pour les retenir. Cet ouvrage fera office d’ancrage pour la construction et permettra de répondre aux sollicitations du vent cyclonique et des tremblements de terre sur l’édifice.
 
-    La construction présente une structure simple, les portées sont courtes. Le mode constructif choisi est la brique creuse doublée d'un isolant laine de verre en ITE. Ce projet de construction a été confié à l'entreprise générale REM BAT, partenaire de longue date de l'agence. La qualité principale de ce projet réside dans l'équilibre entre la dimension économique de la construction permise par l'emploi de techniques traditionnelles et la richesse spatiale que suppose un langage moderne.`
-  },
-  {
-    "id": 9,
-    "title": "Maison Duclos Douy-la-Ramée",
-    "imageUrl": images.maisonDuclos,
-    "imagesProjet": [
-      images.maisonDuclosPlans,
-      images.maisonDuclos1,
-      images.maisonDuclos2,
-    ],
-    "projet": "Maison Duclos",
-    "description": "Extension maison individuelle",
-    "ville": "Douy-la-Ramée",
-    "programme": "Extension maison",
-    "surfaceHabitable": "48.50 m²",
-    "montantTravaux": "74 500.00 €",
-    "maitriseOuvrage": "M. et Mme Duclos",
-    "mission": "Complète avec direction des travaux",
-    "livraison": "Décembre 2023",
-    "texte": `M. et Mme Duclos nous ont confié l'étude d'un projet d'extension de maison individuelle à Douy-la-Ramée en Seine-et-Marne. Le logement se situe dans un lotissement comprenant des propriétés disposant de beaux espaces de jardins.
+    Les trois containers solidaires surplombent ensuite la pente du terrain. Les cubes d’encastrement de leur ossature sont soudés directement aux têtes de pieux de fondation lorsque la hauteur le permet. Lorsque la distance est trop importante entre le logement et le sol naturel, les pieux sont articulés en tête et prolongés par des IPE.
 
-    La densité relativement faible de la parcelle nous a permis de travailler sur une extension du côté d'un pignon aveugle. La façade est élargie et l'extension ne rajoute pas de contrainte à l'ensoleillement de la maison. Elle se compose d'une suite parentale ouverte par un coulissant sur une pièce de vie prolongeant le séjour existant. Le décalage du volume de l'extension par rapport à l'existant est l'occasion de placer une pergola faisant le lien entre l'espace de vie et le jardin. La piscine et la plage faite d'un deck en matériau composite composent un espace se reposant sur le séjour de la maison et son extension.
+    La terrasse prolonge le logement de plain-pied en dehors du volume des containers et nécessite une structure complémentaire pour la soutenir. L’enjeu principal de ce projet réside dans sa capacité à traiter le logement comme un belvédère orienté vers la grande vue.
 
-    La toiture-terrasse végétalisée est accessible depuis les chambres de l'étage. La construction présente une structure simple, les portées sont courtes. Le mode constructif choisi est la brique creuse doublée d'un isolant laine de verre en ITE. Ce projet de construction a été confié à l'entreprise générale REM BAT, partenaire de longue date de l'agence. Le budget alloué à ce projet étant limité, il a été conçu en deux temps. La première phase actuellement terminée comprend les parties intérieures de l'extension et une seconde phase permettra de réaliser les parties couvrantes extérieures.`
-  },
+    Les containers adaptables au logement présentent des caractéristiques dimensionnelles précises. L’enjeu de l’aménagement consistait à trouver un équilibre entre liberté de conception et contrainte constructive.
+
+    Une fois soudés aux angles, les containers sont solidaires : on peut supprimer certains panneaux longitudinaux sans fragiliser le contreventement de l’édifice.
+
+    Une caractéristique du plan consistait à doubler l’épaisseur habitable pour le séjour et la chambre en supprimant en partie les panneaux de tôle au centre du logement. Le contreventement est assuré dans les deux sens par les parois périphériques adossées à la pente.
+
+    Le positionnement des containers et la disposition des parois participent à la composition en plan en orientant les espaces principaux du logement vers la diagonale. Ces espaces s’appuient sur les façades placées dos à la pente et s’ouvrent vers la vallée.
+    `
+    },
+    {
+      "id": 8,
+      "title": "Villa Bien Desiré Saint François Guadeloupe",
+      "imageUrl": images.villaBienDesire,
+      "imagesProjet": [
+        images.villaBienDesirePlans,
+        images.villaBienDesire1,
+        images.villaBienDesire2,
+        images.villaBienDesire3,
+        images.villaBienDesire4,
+        images.villaBienDesire5,
+        images.villaBienDesire6,
+        images.villaBienDesire7,
+        images.villaBienDesire8
+      ],
+      "projet": "Villa Bien Desiré",
+      "description": "Construction neuve",
+      "ville": "Saint François, Guadeloupe",
+      "programme": "Maison individuelle",
+      "surfaceHabitable": "164.58 m²",
+      "montantTravaux": "279 450.00 €",
+      "maitriseOuvrage": "Pauline Noyer",
+      "mission": "AVP PC DCE",
+      "livraison": "Janvier 2025",
+      "texte": `Les logements individuels en Guadeloupe sont en grande partie des dérivés formels de la case créole. Cet habitat est en héritage du carbet amérindien, fait de branches soutenant des chevrons se prolongeant jusqu'au sol. Il est très ouvert et situé dans des sites exposés aux vents dominants pour profiter d'une ventilation naturelle par brassage de l'air.
+
+    La case est initialement conçue en gaulette recouverte de torchis. Après avoir abrité les premiers colons et les esclaves, elle devient à l'abolition la forme d'habitat principale pour la population rurale. Elle fait principalement office de chambre à coucher, les fonctions de service ou les fonctions d'accueil du logement sont transposées dans des espaces extérieurs, dans une relation au jardin de subsistance et au jardin décoratif, comme la cuisine située sous le vent ou la galerie attenante à la case.
+
+    Vers le milieu du XIXe siècle, la forme construite de la case évolue par l'apport des charpentiers de marine. Elle est dès lors conçue en ossature et charpente bois assemblée par tenon et mortaise. La charpente bois est donc empreinte d'une culture dont la dimension symbolique est propre à l'évolution de l'habitat dans l'île. Ce mode constructif caractérisera la forme du logement de Saint-François. Il participera à la symbolique du projet en devenant le marqueur d'une forme d'interprétation de la case créole, dans une recherche de continuité de la culture constructive.
+
+    L'édifice s'implantera sur une parcelle relativement plane, de géométrie simple et dont la surface est à la mesure du programme établi par le maître d'ouvrage. Elle permet d'étendre la construction de plain-pied, de réaliser de larges et profonds espaces de terrasse couverts et des débords de toiture protégeant les façades de la pluie et du soleil. La toiture joue un rôle prépondérant dans la conception de logements en Guadeloupe en constituant le principal support d'usages le plus souvent projetés à l'extérieur.
+
+    Ce projet est simple, c'est la charpente qui dicte sa forme. Nous sommes partis de ce principe pour imaginer le schéma de conception général du projet. Deux parties de la construction composées du séjour et des chambres forment une équerre. En entrant à l'intersection des volumes, on découvre une charpente traditionnelle supportant la toiture de ce corps principal. La terrasse est quant à elle couverte par une structure plus basse constituée de chevrons et d'arêtiers reposant sur des poteaux à section circulaire. Cette charpente prolonge l'axe du séjour, se retourne et couvre également le salon et la cuisine.
+
+    Le passage d'un type de charpente à un autre, d'une lecture verticale du volume du corps principal à un espace s'étendant horizontalement donne du relief à la transition intérieure-extérieure. Elle intègre des espaces traités en interprétation des modes d'habiter, le salon et la cuisine sont ainsi considérés comme des espaces de transition entre le jardin et le cœur du logement regroupant les chambres. De l'extérieur, la couverture de la terrasse semble discontinue par rapport à la charpente principale, à l'image de la galerie couverte juxtaposée à la case créole.`
+    },
+    {
+      "id": 9,
+      "title": "Gîtes Fonrose",
+      "imageUrl": images.gitesFonrose,
+      "imagesProjet": [
+        images.gitesFonrosePlans,
+        images.gitesFonrose1,
+        images.gitesFonrose2,
+        images.gitesFonrose3,
+        images.gitesFonrose4,
+        images.gitesFonrose5,
+        images.gitesFonrose6
+      ],
+      "projet": "Gîtes Fonrose",
+      "description": "Construction neuve",
+      "ville": "Marie-Galante, Guadeloupe",
+      "programme": "Gîtes tourisme",
+      "surfaceHabitable": "126.54 m²",
+      "client": "SPIRE",
+      "mission": "Sous-traitance ESQ",
+      "livraison": "Novembre 2022",
+      "texte": `En partenariat avec l'agence d'architecture SPIRE, il nous a été confié l'esquisse d'un projet de gîte sur l'île de Marie-Galante. Trois pavillons similaires partagent une parcelle vaste sur un plateau entouré d'arbres. Ils sont disposés en quinconce de façon à préserver des espaces de jardins attenants à chaque logement.
+
+    Le plan d'un pavillon est formé par l'intersection de deux volumes, l'un regroupant les espaces intérieurs plus isolés (chambre, salon, salle de bain) et l'autre délimitant une grande terrasse couverte. Le moment de la transition intérieur-extérieur est marqué par un plafond et un plancher qui courent, dans une recherche de continuité. À l'usage, cette continuité est renforcée par une cuisine qui se prolonge sur la partie nord de la terrasse couverte. À l'étage on trouve la chambre des enfants, elle-même prolongée par une loggia donnant sur le salon.
+
+    La conception de logements dans les zones tropicales peut permettre de travailler sur des espaces très en relation avec l'extérieur sans nécessiter de complexité constructive. La température étant élevée toute l'année, il n'est pas question d'isoler plus que nécessaire les logements dans la mesure où une bonne protection solaire et une gestion de la ventilation naturelle sont mises en place.
+
+    La structure du pavillon est en ossature bois avec un bardage simple peau. Les travées structurelles sont réduites ce qui permet de limiter les sections des éléments en bois pour la structure des murs, des planchers et de la charpente. L'essentiel des éléments de menuiseries sont faits de jalousies à lames pleines. Bien qu'imaginé en cohérence avec le budget estimé, le projet est resté au stade d'esquisse et n'a pour le moment pas abouti.`
+    },
   {
     "id": 10,
     "title": "Maison Salles Saint-Maur-des-Fossés",
     "imageUrl": images.maisonSalles,
+    "imageUrlDuo": [images.maisonSalles1, images.maisonSalles],
     "imagesProjet": [
       images.maisonSallesPlans,
-      images.maisonSalles1,
       images.maisonSalles2,
       images.maisonSalles3,
     ],
@@ -299,7 +292,6 @@ Le positionnement des containers et la disposition des parois participent à la 
     "imageUrl": images.maisonsChampsFleuris,
     "imagesProjet": [
       images.maisonsChampsFleurisPlans1,
-      images.maisonsChampsFleurisPlans2,
       images.maisonsChampsFleuris1,
       images.maisonsChampsFleuris2,
       images.maisonsChampsFleuris3
@@ -314,14 +306,7 @@ Le positionnement des containers et la disposition des parois participent à la 
     "client": "ACSTETUDE",
     "mission": "Sous-traitance AVP - PC",
     "livraison": "Juin 2022",
-    "texte": `En collaboration avec l’agence d’architecture ACSTETUDE, il a été question de concevoir la surélévation d’une maison et la création
-      de deux logements neufs dans un quartier résidentiel de Chatillon. La parcelle est traversante entre deux rues au sein d’un tissus pavillonaire
-      dense altérant maisons mitoyennes, maisons isolées et petits collectifs. Le permis de construire présenté en mairie vaut division en trois lots
-      dont les surfaces et les proportions sont similaires. Sur ces terrains ont été conçu deux maisons mitoyennes comprenant un jardin privatif orienté
-      face à la rue. Bien que gardant la même hauteur et le même rythme, les maisons présentent des archtectures différentes en lien avec la nature du
-      tissus urbain et les constructions environnantes. La toiture joue un rôle décisif dans le dessin de la façade. Les constructions reposent sur un RDC
-      vitré et minéral en lien avec le jardin. Des volumes en saillie font le lien entre le R+1 et les combles. La lecture de la façade est ainsi plus
-      dynamique au sein de la séquence urbaine. Les matériaux de façade comme la brique, les tuiles et le zinc ont été choisis en accords avec les constructions voisines. `
+    "texte": `En collaboration avec l’agence d’architecture ACSTETUDE, il a été question de concevoir la surélévation d’une maison et la création de deux logements neufs dans un quartier résidentiel de Châtillon. La parcelle est traversante entre deux rues au sein d’un tissu pavillonnaire dense, mêlant maisons mitoyennes, maisons isolées et petits collectifs. Le permis de construire présenté en mairie prévoit une division en trois lots dont les surfaces et les proportions sont similaires. Sur ces terrains ont été conçues deux maisons mitoyennes comprenant chacune un jardin privatif orienté face à la rue. Bien que gardant la même hauteur et le même rythme, les maisons présentent des architectures différentes, en lien avec la nature du tissu urbain et les constructions environnantes. La toiture joue un rôle décisif dans le dessin de la façade. Les constructions reposent sur un rez-de-chaussée vitré et minéral, en lien avec le jardin. Des volumes en saillie font le lien entre le R+1 et les combles, rendant la lecture de la façade plus dynamique au sein de la séquence urbaine. Les matériaux de façade, tels que la brique, les tuiles et le zinc, ont été choisis en accord avec les constructions voisines.`
   },
   {
     "id": 12,
@@ -432,16 +417,31 @@ Le positionnement des containers et la disposition des parois participent à la 
     "id": 16,
     "title": "Immeuble Choisy Alfortville",
     "imageUrl": images.immeubleChoisy,
-    "imagesProjet": [],
+    "imagesProjet": [
+      images.immeubleChoisy1,
+      images.immeubleChoisy2,
+      images.immeubleChoisy3,
+      images.immeubleChoisy4,
+      images.immeubleChoisy5,
+      images.immeubleChoisy6,
+      images.immeubleChoisy7,
+      images.immeubleChoisy8,
+      images.immeubleChoisy9,
+      images.immeubleChoisy10,
+    ],
     "projet": "Immeuble Choisy",
-    "programme": "",
-    "surfaceHabitable": "m²",
-    "montantTravaux": "",
-    "maitriseOuvrage": "",
-    "mission": "",
-    "livraison": "",
+    "description": "Collectif de logements",
+    "programme": "Immeuble de logements",
+    "surfaceHabitable": "1044.06 m²",
+    "client": "ACSTETUDE",
+    "mission": "Sous-traitance AVP - PC - DC",
+    "livraison": "Avril 2022",
     "ville": "Alfortville",
-    "texte": ``
+    "texte": `En collaboration avec l’agence d’architecture ACSTETUDE, il a été question de réaliser une étude pour la construction d'un immeuble de logements à Alfortville. Le projet s'inscrit dans l'emprise d'un ancien garage attenant à une maison de ville donnant sur rue. Le projet est encaissé par rapport à l'axe principal et s'étend sous un immeuble en longueur donnant sur ce même axe. Les masses bâties forment ainsi une cour ouverte sur l'espace public. Le projet donne également sur une impasse située à l'arrière. Deux patios végétalisés sont disposés en mitoyenneté pour améliorer la luminosité et la ventilation des logements. L'immeuble s'articule en deux corps principaux couverts par une toiture mansardée. Le dessin des façades, notamment le rapport entre les percements et les trumeaux, fait écho aux constructions voisines.
+
+    On accède au hall de l'immeuble par une cour largement végétalisée. Les plateaux de logements sont distribués par deux noyaux de circulation verticale placés au cœur des volumes. Cette organisation permet aux logements de bénéficier des meilleures dispositions en plan et des conditions optimales d'ensoleillement. Les séjours restent ainsi spacieux et doublement orientés, sans que les surfaces des logements ne soient trop importantes. Les pièces de vie s'ouvrent également sur la cuisine et sur les chambres pour les typologies T2. Cette disposition privilégie l'espace dans un contexte où chaque m² compte.
+
+    L'instruction du projet en mairie a été longue en raison de la complexité du contexte réglementaire. Actuellement, le permis de construire a été validé par la mairie mais le projet est en attente de financement.`
   },
   {
     "id": 17,
@@ -460,14 +460,7 @@ Le positionnement des containers et la disposition des parois participent à la 
     "mission": "Sous-traitance Esquisse Imagerie",
     "livraison": "Novembre 2021",
     "ville": "Le Bourget",
-    "texte": `En collaboration avec l’agence d’architecture ACSTETUDE, il a été question de réaliser une esquisse de projet pour la
-      réalisation d'un immeuble de logement au Bourget. Le projet s'inscrit sur le site de l'ancien cinéma l'Aviatic. La construction s'appuie sur
-      un immeuble mitoyen et forme une cour. Les différentes parties du bâtiment sont relativement fines pour permettre la réalisation de logements
-      traversants et largement éclairés. Ils bénéficient de grandes surfaces vitrées. La partie du bâtiment à l'arrière donne sur un jardin en fond
-      de parcelle. La façade sur rue a été travaillée en relation avec l'immeuble voisin. Le volume en arrière respecte la hauteur à l'acrotère et
-      la marge de recul de cet immeuble. Le volume principal de la façade quant à lui est placé à l'alignement de la voie. Il trouve une centralité
-      grâce à un bow-window apportant de la lumière et une vue perspective aux séjours des logements. L'attique est traitée en retrait de la façade
-      principale et offre de grands espaces de terrasse.
+    "texte": `En collaboration avec l’agence d’architecture ACSTETUDE, il a été question de réaliser une esquisse de projet pour la réalisation d'un immeuble de logement au Bourget. Le projet s'inscrit sur le site de l'ancien cinéma l'Aviatic. La construction s'appuie sur un immeuble mitoyen et forme une cour. Les différentes parties du bâtiment sont relativement fines pour permettre la réalisation de logements traversants et largement éclairés. Ils bénéficient de grandes surfaces vitrées. La partie du bâtiment à l'arrière donne sur un jardin en fond de parcelle. La façade sur rue a été travaillée en relation avec l'immeuble voisin. Le volume en arrière respecte la hauteur à l'acrotère et la marge de recul de cet immeuble. Le volume principal de la façade quant à lui est placé à l'alignement de la voie. Il trouve une centralité grâce à un bow-window apportant de la lumière et une vue perspective aux séjours des logements. L'attique est traitée en retrait de la façade principale et offre de grands espaces de terrasse.
 
       Suite à l'acquisition des parcelles voisines par la maîtrise d'ouvrage, l'insertion urbaine d'une seconde version de l'esquisse a été demandée.
       Un ensemble en interprétation des premières réflexions a été proposé avec un traitement particulier à l'angle des voies.`
@@ -476,30 +469,25 @@ Le positionnement des containers et la disposition des parois participent à la 
     "id": 18,
     "title": "Immeuble des Cerisiers Thorigny sur Marne",
     "imageUrl": images.immeubleCerisiers,
-    "imagesProjet": [],
+    "imagesProjet": [
+      images.immeubleCerisiers1,
+      images.immeubleCerisiers2,
+      images.immeubleCerisiers3,
+      images.immeubleCerisiers4,
+      images.immeubleCerisiers5,
+      images.immeubleCerisiers7,
+    ],
     "projet": "Immeuble des Cerisiers",
-    "programme": "",
-    "surfaceHabitable": "",
-    "montantTravaux": "",
-    "maitriseOuvrage": "",
-    "mission": "",
-    "livraison": "",
+    "programme": "Collectifs de logements",
+    "surfaceHabitable": "2136.71 m²",
+    "client": "Ethik - A",
+    "mission": "Sous-traitance AVP - PC",
+    "livraison": "Juillet 2023",
     "ville": "Thorigny sur Marne",
-    "texte": ``
-  },
-  {
-    "id": 19,
-    "title": "Immeuble de bureaux Btb Baie Mahault",
-    "imageUrl": images.immeubleBtb,
+    "texte": `En collaboration avec l’agence d’architecture Ethik-A, il a été question de réaliser une étude pour la construction de logements collectifs à Thorigny-sur-Marne. La mission de l'agence consistait à travailler sur la conception de l'enveloppe du bâtiment ainsi que sur la modélisation générale du projet.
 
-    "projet": "Immeuble de bureaux Btb Baie",
-    "programme": "",
-    "surfaceHabitable": "m²",
-    "montantTravaux": "",
-    "maitriseOuvrage": "",
-    "mission": "",
-    "livraison": "",
-    "ville": "Baie Mahault",
-    "texte": ``
-  }
+    Le projet se compose de trois bâtiments successifs développant un vocabulaire relativement similaire, que ce soit dans les proportions générales, le rythme des percements ou encore les matériaux employés. Les bâtiments comprennent un rez-de-chaussée minéral, un corps sur deux niveaux et un attique en retrait de la façade.
+
+    Les angles sont pourvus de terrasses en débord et en alcôve. Les logements développés dans les parties centrales des corps de bâtiments bénéficient également de balcons. Ce jeu de creux et de débords par rapport à la façade donne le rythme de la couverture, laquelle forme une casquette profonde laissant deviner de grands espaces de terrasse en attique.`
+  },
 ]

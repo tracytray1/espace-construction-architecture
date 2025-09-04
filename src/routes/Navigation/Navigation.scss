@@ -11,7 +11,7 @@
 
   .logo-container {
     height: auto;
-    width: clamp(250px,400px,650px);
+    width: clamp(250px,300px,450px);
     padding: 5px;
 
     .logo {
@@ -41,7 +41,7 @@
 
         &.active {
           color: black; // le lien actif est noir
-          font-weight: 600;
+          font-weight: 400;
         }
     }
   }

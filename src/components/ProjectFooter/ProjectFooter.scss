@@ -1,9 +1,19 @@
-  .projet-footer {
-    cursor: pointer;
-    padding: 20px 0px;
+.project-footer {
+  cursor: pointer;
+  padding: 20px 0;
 
-    p {
-      display: flex;
-      align-items: center;
-    }
+  .project-footer-link {
+    display: inline-flex; // flex mais à la taille du contenu
+    align-items: center; // centre verticalement
+    gap: 2px; // espace entre texte et icône
+    text-decoration: none;
+    font-weight: 500;
+    color: inherit; // hérite la couleur du texte
   }
+
+  .footer-icon {
+    flex-shrink: 0; // évite le "rapetissement"
+    top: 1px; // ajuste légèrement si besoin
+    margin-bottom: 1px;
+  }
+}

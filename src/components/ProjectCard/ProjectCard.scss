@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   border: 1px solid #ddd;
-  border-radius: 8px;
   overflow: hidden;
   background: #fff;
   cursor: pointer;
@@ -76,6 +75,12 @@
     }
   .project-body-container-logo {
     max-width: 40px;
+  }
+
+  .project-body-container-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
     p {

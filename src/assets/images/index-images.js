@@ -93,10 +93,10 @@ export { default as villaBienDesirePlans } from './projects/Saint-Francois/saint
 
 
 export { default as villaDeLutiis }  from './homepage/villa-de-lutiis-thorigny-sur-marne.jpg';
-export { default as villaDeLutiis1 } from './projects/Thorigny/thorigny-1.jpg';
-export { default as villaDeLutiis2 } from './projects/Thorigny/thorigny-2.jpg';
-export { default as villaDeLutiis3 } from './projects/Thorigny/thorigny-3.jpg';
-export { default as villaDeLutiisPlans } from './projects/Thorigny/thorigny-plans.jpg';
+export { default as villaDeLutiis1 } from './projects/Thorigny-Lutiis/thorigny-lutiis-1.jpg';
+export { default as villaDeLutiis2 } from './projects/Thorigny-Lutiis/thorigny-lutiis-2.jpg';
+export { default as villaDeLutiis3 } from './projects/Thorigny-Lutiis/thorigny-lutiis-3.jpg';
+export { default as villaDeLutiisPlans } from './projects/Thorigny-Lutiis/thorigny-lutiis-plans.jpg';
 
 export { default as villaIllemassene }  from './homepage/villa-illemassene-bois-le-roi.jpg';
 export { default as villaIllemassene1 } from './projects/BoisLeRoi/boisleroi-1.jpg';
@@ -115,7 +115,22 @@ export { default as villasDesVarennesPlans } from './projects/SGLA/sgla-plans.jp
 
 //Missing
 export { default as immeubleChoisy } from './homepage/immeuble-choisy-alfortville.png';
+export { default as immeubleChoisy1 } from './projects/Alfortville/alfortville-1.png';
+export { default as immeubleChoisy2 } from './projects/Alfortville/alfortville-2.png';
+export { default as immeubleChoisy3 } from './projects/Alfortville/alfortville-3.png';
+export { default as immeubleChoisy4 } from './projects/Alfortville/alfortville-4.png';
+export { default as immeubleChoisy5 } from './projects/Alfortville/alfortville-5.png';
+export { default as immeubleChoisy6 } from './projects/Alfortville/alfortville-6.png';
+export { default as immeubleChoisy7 } from './projects/Alfortville/alfortville-7.png';
+export { default as immeubleChoisy8 } from './projects/Alfortville/alfortville-8.png';
+export { default as immeubleChoisy9 } from './projects/Alfortville/alfortville-9.png';
+export { default as immeubleChoisy10 } from './projects/Alfortville/alfortville-10.png';
 
-export { default as immeubleBtb } from './homepage/immeuble-de-bureaux-baie-mahault.jpg';
 
 export { default as immeubleCerisiers } from './homepage/immeuble-des-cerisiers-thorigny-sur-marne.jpg';
+export { default as immeubleCerisiers1 } from './projects/Thorigny-Cerisiers/thorigny-cerisiers-1.png';
+export { default as immeubleCerisiers2 } from './projects/Thorigny-Cerisiers/thorigny-cerisiers-2.png';
+export { default as immeubleCerisiers3 } from './projects/Thorigny-Cerisiers/thorigny-cerisiers-3.png';
+export { default as immeubleCerisiers4 } from './projects/Thorigny-Cerisiers/thorigny-cerisiers-4.png';
+export { default as immeubleCerisiers5 } from './projects/Thorigny-Cerisiers/thorigny-cerisiers-5.png';
+export { default as immeubleCerisiers7 } from './projects/Thorigny-Cerisiers/thorigny-cerisiers-7.png';
