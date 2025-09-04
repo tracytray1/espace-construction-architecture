@@ -15,16 +15,16 @@ const Projet = () => {
   if (!foundProject) return <p>Projet non trouvé</p>;
 
   return (
-    <div className='projet-detail_wrapper'>
+    <div className='project-detail_wrapper'>
 
-      <ProjectHero imageUrl={foundProject.imageUrl} title={foundProject.title} />
+      <ProjectHero imageUrl={foundProject.imageUrl} title={foundProject.title} imageUrlDuo={foundProject.imageUrlDuo} />
       <ProjectHeader project={foundProject.projet} city={foundProject.ville} description={foundProject.description} />
 
-      <div className='projet-detail_body'>
-        <p>{foundProject.texte}</p>
+      <div className='project-detail_body'>
+        <p className='project'>{foundProject.texte}</p>
       </div>
 
-      <ProjectDetailPhotos photos={foundProject.imagesProjet} project={foundProject.projet} />
+      <ProjectDetailPhotos photos={foundProject.imagesProjet} project={foundProject.projet} id={foundProject.id} />
       <ProjectInfo foundProject={foundProject} />
       <InternalLinks allProjects={PROJECTS_DATA} foundProject={foundProject} />
       <ProjectFooter />

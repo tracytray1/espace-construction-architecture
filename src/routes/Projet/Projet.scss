@@ -1,4 +1,4 @@
-.projet-detail_wrapper {
+.project-detail_wrapper {
   display: block;
   max-width: 1200px;
   height: 100%;
@@ -6,8 +6,9 @@
   padding-left: 1rem;
   padding-right: 1rem;
 
-  .projet-detail_body p {
+  .project-detail_body p {
     white-space: pre-line;
     padding-bottom: 50px;
+    text-align: justify;
   }
 }

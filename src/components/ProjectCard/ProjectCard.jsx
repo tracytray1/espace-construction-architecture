@@ -49,7 +49,7 @@ const ProjectCard = ({ project, allImagesLoaded, index }) => {
             <div className='project-body-container-logo'>
             <LogoEspaceConstructionSansTexte/>
           </div>
-          <div>
+          <div className='project-body-container-detail'>
             <p>{projet}</p>
             <p>{ville}</p>
           </div>
