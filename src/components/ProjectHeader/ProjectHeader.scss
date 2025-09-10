@@ -1,26 +1,34 @@
-  .projet-detail_header {
+  .project-detail_header {
     display: flex;
     gap: 20px;
     justify-content: space-between;
     align-items: center;
     padding-block: 35px;
 
-    .projet-detail_header-info {
+    .project-detail_header-info {
       display: flex;
-      column-gap: 10px;
+      column-gap: 20px;
       align-items: baseline;
 
-    .projet-detail_ville {
-      color: grey;
-    }
+      .project-detail_nom {
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .project-detail_ville {
+        color: grey;
+        font-size: 20px;
+        font-weight: 400;
+      }
   }
 
-  .projet-detail_header-description {
+  .project-detail_header-description {
     display: flex;
     align-items: baseline;
 
-    .projet-detail_description {
-      transition: font-style 0.3s ease; // transition optionnelle
+    .project-detail_description {
+      font-size: 20px;
+      font-weight: 400;
     }
   }
 
@@ -29,25 +37,25 @@
     align-items: flex-start;
     gap: 10px;
 
-    .projet-detail_header-info {
+    .project-detail_header-info {
         flex-direction: column; // nom + ville empilés
         align-items: flex-start;
         gap: 4px;
 
-        .projet-detail_nom {
+        .project-detail_nom {
           font-size: 1.4rem;
         }
 
-        .projet-detail_ville {
+        .project-detail_ville {
           font-size: 0.95rem;
         }
       }
 
-      .projet-detail_header-description {
+      .project-detail_header-description {
         width: 100%;
       }
 
-      .projet-detail_description {
+      .project-detail_description {
         font-size: 0.95rem;
         font-style: italic;
     }

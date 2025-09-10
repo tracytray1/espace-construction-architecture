@@ -5,6 +5,7 @@ import Home from './routes/Home/Home'
 import Contact from './routes/Contact/Contact'
 import Navigation from './routes/Navigation/Navigation'
 import Projet from './routes/Projet/Projet'
+import AboutPage from './routes/AboutPage/AboutPage'
 import PageTransition from './components/PageTransition/PageTransition';
 
 
@@ -18,6 +19,7 @@ function App() {
           <Route index element={<PageTransition><Home /></PageTransition>} />
           <Route path="contact" element={<PageTransition><Contact /></PageTransition>} />
           <Route path="projets/:id" element={<PageTransition><Projet /></PageTransition>} />
+          <Route path="a-propos" element={<PageTransition><AboutPage /></PageTransition>} />
         </Route>
       </Routes>
     </AnimatePresence>

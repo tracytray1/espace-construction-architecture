@@ -4,23 +4,23 @@
   padding-left: 1rem;
   padding-right: 1rem;
 
-.contact-header {
-  max-width: 800px; // limite la largeur pour lisibilité
-  margin-bottom: 2rem;
-  text-align: left;
+  .contact-header {
+    max-width: 800px; // limite la largeur pour lisibilité
+    margin-bottom: 2rem;
+    text-align: left;
 
-  .contact-title {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-    color: #000000; // gris foncé élégant
-  }
+    .contact-title {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+      color: #000000; // gris foncé élégant
+    }
 
-  .contact-subtitle {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #000000; // gris doux pour contraste
-    margin: 0;
-  }
+    .contact-subtitle {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #000000; // gris doux pour contraste
+      margin: 0;
+    }
   }
 }

@@ -57,8 +57,6 @@ export { default as maisonFayolPlans } from './projects/Dampmart/dampmart-plans.
 
 export { default as maisonSalles }  from './homepage/maison-salles-saint-maur-des-fosses.jpg';
 export { default as maisonSalles1 } from './projects/Saint-Maur/saint-maur-1.jpg';
-export { default as maisonSalles2 } from './projects/Saint-Maur/saint-maur-2.jpg';
-export { default as maisonSalles3 } from './projects/Saint-Maur/saint-maur-3.jpg';
 export { default as maisonSallesPlans } from './projects/Saint-Maur/saint-maur-plans.jpg';
 
 

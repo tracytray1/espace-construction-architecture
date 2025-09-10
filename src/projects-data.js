@@ -265,11 +265,9 @@ export const PROJECTS_DATA =
     "id": 10,
     "title": "Maison Salles Saint-Maur-des-Fossés",
     "imageUrl": images.maisonSalles,
-    "imageUrlDuo": [images.maisonSalles1, images.maisonSalles],
     "imagesProjet": [
       images.maisonSallesPlans,
-      images.maisonSalles2,
-      images.maisonSalles3,
+      images.maisonSalles1,
     ],
     "projet": "Maison Salles",
     "description" : "Surélevation",

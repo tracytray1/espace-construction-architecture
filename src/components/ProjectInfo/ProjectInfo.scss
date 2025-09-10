@@ -8,12 +8,13 @@
   border-block: 1px solid black;
   margin-block: 50px;
 
+
   .projet-detail_info-item {
     display: flex;
     column-gap: 15px;
 
     dt {
-      font-weight: bold;
+      font-weight: 600;
     }
   }
 }

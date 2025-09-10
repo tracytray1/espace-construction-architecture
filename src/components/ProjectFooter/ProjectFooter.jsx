@@ -2,7 +2,7 @@ import { ChevronUp } from "lucide-react";
 
 import './ProjectFooter.scss'
 
-const ProjectHero = () => {
+const ProjectFooter = () => {
   return (
     <div className='project-footer'>
       <p>
@@ -22,4 +22,4 @@ const ProjectHero = () => {
   )
 }
 
-export default ProjectHero
+export default ProjectFooter
