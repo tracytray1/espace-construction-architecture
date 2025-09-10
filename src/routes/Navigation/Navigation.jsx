@@ -31,6 +31,15 @@ const Navigation = () => {
           >
             Références
           </NavLink>
+
+          <NavLink
+            to="/a-propos"
+            className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+            onClick={() => setIsMenuOpen(false)}
+          >
+            À Propos
+          </NavLink>
+
           <NavLink
             to="/contact"
             className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}

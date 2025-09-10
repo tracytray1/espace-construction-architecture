@@ -1,0 +1,11 @@
+.about-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  .about-body {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+  }
+}

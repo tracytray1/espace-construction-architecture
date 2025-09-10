@@ -1,0 +1,9 @@
+.about-photos {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    max-width: 300PX;
+    height: auto;
+  }
+}

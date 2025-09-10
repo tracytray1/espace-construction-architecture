@@ -1,24 +1,12 @@
   .project-detail_hero {
     width: 100%;
-    height: 70vh;
+    height: auto;
     overflow: hidden;
 
     .project-detail_image {
       width: 100%;
       object-fit: cover;
-      height: 100%;
-    }
-
-    .project-detail_duo {
-      display: flex;
-      gap: 30px;
-      height: 100%;
-
-      img {
-        width: 50%; // chaque image prend la moitié
-        height: auto;
-        object-fit: cover;
-      }
+      height: auto;
     }
   }
 

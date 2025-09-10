@@ -43,15 +43,16 @@ const FormInput = () => {
           email: '',
           company: '',
           phone: '',
-          position: '',
-          building: '',
-          budget: '',
+          address: '',
           totalSurface: '',
+          building: '',
           siteSurface: '',
-          website: '',
+          budget: '',
+          mission: '',
           comment: ''
         });
       },
+
       (error) => {
         setStatus("Erreur lors de l'envoi ❌ : " + error.text);
       }
@@ -61,7 +62,7 @@ const FormInput = () => {
 
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
-      <h2>Contact</h2>
+      <h2>Nous contacter</h2>
 
       <div className="row">
         <label>
@@ -77,7 +78,7 @@ const FormInput = () => {
 
       <div className="row">
         <label>
-          Nom de l'entreprise
+          Entreprise / Organisation
           <input type="text" name="company" value={formData.company} onChange={handleChange} />
         </label>
 
@@ -89,43 +90,51 @@ const FormInput = () => {
 
       <div className="row">
         <label>
-          Département / Poste
-          <input type="text" name="position" value={formData.position} onChange={handleChange} />
+          Adresse parcelle
+          <input type="text" name="adresse" value={formData.address} onChange={handleChange} />
         </label>
 
         <label>
-          Type de bâtiment
-          <select name="building" value={formData.building} onChange={handleChange}>
-            <option value="">Veuillez sélectionner</option>
-            <option value="résidentiel">Résidentiel</option>
-            <option value="commercial">Commercial</option>
-            <option value="industriel">Industriel</option>
-          </select>
-        </label>
-      </div>
-
-      <div className="row">
-        <label>
-          Budget total (EUR)
-          <input type="number" name="budget" value={formData.budget} onChange={handleChange} />
-        </label>
-
-        <label>
-          Surface totale (㎡)
+          Surface parcelle (㎡)
           <input type="number" name="totalSurface" value={formData.totalSurface} onChange={handleChange} />
         </label>
       </div>
 
       <div className="row">
         <label>
-          Surface du site (㎡)
-          <input type="number" name="siteSurface" value={formData.siteSurface} onChange={handleChange} />
+          Nature de l'ouvrage
+          <select name="building" value={formData.building} onChange={handleChange}>
+            <option value="">Veuillez sélectionner</option>
+            <option value="maison-individuelle">Maison individuelle</option>
+            <option value="logement-collectif">Logement collectif</option>
+            <option value="hotellerie">Hôtellerie</option>
+            <option value="bureaux">Bureaux</option>
+            <option value="local-commercial">Local commercial</option>
+            <option value="socio-culturel">Socio-culturel</option>
+            <option value="sports-loisirs">Sports et Loisirs</option>
+          </select>
         </label>
 
         <label>
-          Site Web
-          <input type="url" name="website" value={formData.website} onChange={handleChange} />
+          Surface programme (㎡)
+          <input type="number" name="siteSurface" value={formData.siteSurface} onChange={handleChange} />
         </label>
+      </div>
+
+      <div className="row">
+        <label>
+          Budget global (EUR)
+          <input type="number" name="budget" value={formData.budget} onChange={handleChange} />
+        </label>
+
+        <label>
+          Type de mission
+          <select name="mission" value={formData.mission} onChange={handleChange}>
+            <option value="">Veuillez sélectionner</option>
+            <option value="mission-partielle">Mission partielle (permis de construire)</option>
+            <option value="mission-complete">Mission complète (direction travaux)</option>
+          </select>
+          </label>
       </div>
 
       <label>

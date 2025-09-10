@@ -1,0 +1,23 @@
+import './AboutContent.scss'
+
+const AboutContent = () => {
+  return (
+    <div className='about-content'>
+      <h2>Description de l’agence</h2>
+      <p>Lucas Devienne est un jeune architecte diplômé d'état en 2020 par l'ENSAPLV qui obtient son habilité à la maîtrise d'ouvrage en 2025. Il fonde l'agence ECA (Espace Construction Architecture) en 2026 dans la continuité d'expériences professionnelles menées au sein d'agences basées en région parisienne et en Guadeloupe. Cette initiative a également été nourrie par le développement d'une pratique plus personnelle, notamment en terme de conception architecturale.</p>
+
+      <h2>Exigence conceptuelle et processus de projet</h2>
+      <p>La démarche conceptuelle de l'agence implique de définir un sens donné au projet architectural. Ce sens se traduit par la formation d'un schéma de conception, une résolution formelle des problématiques esthétiques et fonctionnelles du projet tout en y apportant une direction lisible et claire. À l'image d'une société de pièces, ce schéma définie la façon de transcrire le programme et les intentions spatiales du projet. Ces critères de conception suggèrent une application à toutes les échelles, celle du territoire en faisant participer le paysage à la composition du projet, celle de l'édifice en utilisant la structure comme marqueur du dimensionnement et de la volumétrie du projet, celle de la pièce en conditionnant les proportions des espaces et leurs transitions ou encore celle du détail transformant la complexité constructive en expression de l'architecture.</p>
+
+      <p>La notion de schéma implique également de garder de la flexibilité au projet tout en préservant les critères de conception. Elle permet de rester à l'écoute de la maîtrise d'ouvrage, de leur demande vis-à-vis des modes d'habiter, de leurs goûts, de leurs expériences et de leurs références. Il est question de faire participer la maîtrise d'ouvrage lors des phases de conception tout en préservant le cap. Cette flexibilité est également à l'épreuve des transformations qui surviendront tout au long du processus de projet. Entre la phase esquisse, l'instruction du permis de construire, la consultation des entreprises et l'exécution des travaux, le projet architectural subit des évolutions qui, lorsqu'il est bien pensé, doivent toujours s'intégrer dans le schéma de conception.</p>
+
+      <h2>Le climat comme ressource dans l’architecture	</h2>
+      <p>L'expérience de l'agence aux Antilles Françaises dans le cadre de bon nombre de ses projets nous a permis de développer un regard particulier sur les composantes climatiques d'un site. Utiliser le climat comme ressource lors de la conception d'un édifice nourrie des réflexions à tous les niveaux du projet, que ce soit en définissant le comportement au vent du bâtiment pour guider la ventilation naturelle, son orientation et ses protectoins solaires en relation avec les usages donnés aux pièces, la gestion de la pluie et de l'humidité pour caractériser les aspects constructifs de l'enveloppe.. Tous ces composantes climatiques fournissent des pistes de conception qui peuvent aller jusqu'à définir la matérialité d'un projet. L'étude du climat dans une région donnée permet donc de caractériser une architecture contextualisée, confortable à vivre et résistante à long terme.</p>
+
+      <h2>Gestion constructive et économique du projet</h2>
+      <p>Les compétences de l'agence se traduisent également par une volonté de maîtrise technique, en anticipation des problématiques constructives tout au long du processus de projet. Le travail du détail dès les phases de conception prépare le passage à l'acte de bâtir. Notre vision du détail consiste à le considérer comme un outil permettant à un moment du projet traduisant une difficulté constructive de devenir une source d'expression dans l'architecture. Il a donc un rôle à jouer lors des phases de conception, en résolvant l'équilibre entre forme idéalisée du projet et réalité construite. Cette démarche nous pousse à intégrer les entreprises dans les échanges bien avant de préparer la demande de permis de construire. Cet apport à également l'avantage de rassurer la maîtrise d'ouvrage sur l'économie de projet et la gestion du chantier en leur offrant la garantie d'une association avec un réseau professionnel compétant. L'anticipation des problématiques constructives en phase de conception est également gage d'un chantier qui respectera les délais.</p>
+    </div>
+ )
+}
+
+export default AboutContent
