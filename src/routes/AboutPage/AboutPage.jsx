@@ -17,8 +17,8 @@ const AboutPage = () => {
         <div className="about-footer">
           <AboutFooter />
         </div>
-      </div>
       <ProjectFooter />
+      </div>
     </>
   )
 }
