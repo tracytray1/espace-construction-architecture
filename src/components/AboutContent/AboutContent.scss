@@ -1,8 +1,18 @@
-.about-content h2 {
-  padding-block: 50px;
-}
- p {
-  white-space: pre-line;
-  padding-bottom: 30px;
-  text-align: justify;
-}
+.about-content {
+    h2 {
+      padding-block: 50px;
+
+      &:first-of-type {
+          padding-top: 0; // annule le padding du haut
+        }
+    }
+
+  p {
+    white-space: pre-line;
+    text-align: justify;
+
+    b {
+      font-weight: 600;
+    }
+  }
+ }

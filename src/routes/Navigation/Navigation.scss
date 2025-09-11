@@ -36,7 +36,8 @@
       transition: color 0.3s ease;
 
         &:hover {
-          color: black; // au survol → noir
+          color: black;
+          font-weight: 400; // au survol → noir
         }
 
         &.active {

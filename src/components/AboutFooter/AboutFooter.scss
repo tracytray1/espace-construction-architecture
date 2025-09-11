@@ -1,9 +1,10 @@
 .container {
-  padding-block: 50px;
+  padding-block: 60px;
 
   .partners {
     display: flex;
     flex-direction: row;
+    padding-top: 15px;
     gap: 1rem;
 
     img {
