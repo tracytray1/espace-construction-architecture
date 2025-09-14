@@ -1,5 +1,4 @@
 import AboutContent from '../../components/AboutContent/AboutContent'
-import AboutPhotos from '../../components/AboutPhotos/AboutPhotos'
 import AboutFooter from '../../components/AboutFooter/AboutFooter'
 import ProjectFooter from '../../components/ProjectFooter/ProjectFooter'
 
@@ -11,7 +10,6 @@ const AboutPage = () => {
     <>
       <div className="about-container">
         <div className="about-body">
-          <AboutPhotos />
           <AboutContent />
         </div>
         <div className="about-footer">

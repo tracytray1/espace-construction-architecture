@@ -1,8 +1,9 @@
-import LogoREM from './logo-rem.jpg'
-import LogoKalegos from './logo-kalegos.jpg'
-import LogoBakary from './logo-bakary.jpg'
-import LogoYohan from './logo-yohan.jpg'
-import LogoSpire from './logo-spire.jpg'
+import LogoREM from './logo-rem.svg'
+import LogoKalegos from './logo-kalegos.svg'
+import LogoBakary from './logo-bakary-diakite.svg'
+import LogoYohan from './logo-yohan-fayol.svg'
+import LogoACST from './logo-acst.svg'
+import LogoSpire from './logo-spire.svg'
 
 export const LOGOS_PARTNERS = [
   {
@@ -25,8 +26,13 @@ export const LOGOS_PARTNERS = [
     'imageURL': LogoYohan,
     'altTitle': 'logo Yohan Fayol',
   },
-    {
+  {
     'id': 5,
+    'imageURL': LogoACST,
+    'altTitle': 'logo ACST',
+  },
+  {
+    'id': 6,
     'imageURL': LogoSpire,
     'altTitle': 'logo SPIRE',
   }

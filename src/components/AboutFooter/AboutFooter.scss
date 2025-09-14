@@ -1,16 +1,30 @@
 .container {
-  padding-block: 60px;
-
   .partners {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding-top: 15px;
-    gap: 1rem;
 
     img {
-      max-width: 230px;
+      max-width: 194px;
       height: auto;
       object-fit: contain;
+      flex-shrink: 1;
+      min-width: 0;
+    }
+  }
+  .divider {
+    margin-top: 40px;
+    border-top: 1px solid #606060; // la ligne
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    .partners {
+      justify-content: center;
+      gap: 10px;
     }
   }
 }
