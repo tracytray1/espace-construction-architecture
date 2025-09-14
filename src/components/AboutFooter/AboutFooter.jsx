@@ -11,6 +11,7 @@ const AboutFooter = () => {
           )
         )}
       </div>
+       <div className="divider"></div>
     </div>
  )
 }
