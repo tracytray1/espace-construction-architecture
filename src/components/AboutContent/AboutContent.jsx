@@ -1,11 +1,12 @@
 import './AboutContent.scss'
+import { PHOTOS_ABOUT } from "../../assets/images/a-propos/photos-about";
 
 const AboutContent = () => {
   return (
     <div className='about-content'>
       <div className='about-section about-intro'>
         <div className='about-intro-image'>
-          <img src="src/assets/images/a-propos/portrait-lucas-devienne.jpg"></img>
+          <img src={PHOTOS_ABOUT[0].title} />
         </div>
         <div className='about-intro-text'>
           <h2>Description de l’agence</h2>
@@ -23,13 +24,13 @@ const AboutContent = () => {
           <p>Notre expérience aux <b>Antilles Françaises</b> nous a permis de développer un regard particulier sur les <b>composantes climatiques</b> d'un site. Utiliser le climat comme ressource lors de la conception d'un édifice nourrie des réflexions à tous les niveaux du projet, que ce soit en définissant le <b>comportement au vent</b> du bâtiment pour provoquer la ventilation naturelle, en utilisant les <b>protections solaires</b> et débords de toiture comme support d'usages projetés à l'extérieur, en travaillant sur la <b>gestion de la pluie et de l'humidité</b> pour caractériser les différentes peaux de l'enveloppe. Tous ces composantes climatiques fournissent des pistes de conception qui peuvent aller jusqu'à définir la matérialité d'un projet. L'étude du climat dans une région donnée va donc dans le sens d'une architecture qui s'<b>inscrit dans son contexte, agréable à vivre et durable</b>.</p>
         </div>
         <div className='about-concept-image'>
-          <img src="src/assets/images/a-propos/plans-andelu.jpg"></img>
+          <img src={PHOTOS_ABOUT[1].title}/>
         </div>
       </div>
 
       <div className='about-section about-construction'>
         <div className='about-construction-text'>
-          <img src="src/assets/images/a-propos/plan.jpg"></img>
+          <img src={PHOTOS_ABOUT[2].title}/>
         </div>
         <div>
           <h2>Gestion constructive du projet</h2>
