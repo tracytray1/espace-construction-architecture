@@ -25,12 +25,12 @@ The project showcases architectural works, an "About" section, and a dynamic pro
    git clone https://github.com/your-username/your-repo.git
    cd your-repo
    ```
-Install dependencies:
+2. Install dependencies:
 
    ```bash
 npm install
    ```
-Start the development server:
+3. Start the development server:
 
    ```bash
 npm run dev
@@ -39,12 +39,12 @@ npm run dev
 
 ## 🛠️ Available Scripts
    ```bash
-npm run dev → start local dev server
+npm run dev``` → start local dev server
+   ```bash
+npm run build``` → build the app for production
+   ```bash
+npm run preview``` → preview the production build locally
 
-npm run build → build the app for production
-
-npm run preview → preview the production build locally
-   ```
 
 ## 📁 Project Structure
    ```bash
