@@ -97,8 +97,7 @@ export const PROJECTS_DATA =
     "programme": "Maison individuelle",
     "surfaceHabitable": "203.50 m²",
     "client": "ACSTETUDE",
-    "mission": "Sous-traitance imagerie",
-    "livraison": "Janvier 2023",
+    "mission": "AVP - Imagerie",
     "texte": `Il a été confié à l'agence d'architecture ACSTETUDE, avec laquelle nous avons l'habitude de collaborer, la conception d'une maison individuelle à Bois-le-Roi en Seine-et-Marne. Notre mission consistait à participer à la conception, modéliser la maquette numérique et réaliser l'imagerie des parties principales de la maison.
 
     Le projet se développe au centre d'une grande parcelle donnant sur un bois. La maison est très ouverte sur la partie avant du jardin. La large allée centrale pavée donne un aspect monumental au projet. La façade principale est faite de lignes horizontales renforcées par les avant-toits, les balcons et les auvents et d'un rythme vertical structuré par les trumeaux et les superpositions des ouvertures.
@@ -179,7 +178,7 @@ export const PROJECTS_DATA =
     "ville": "Le Gosier, Guadeloupe",
     "programme": "Habitation secondaire",
     "surfaceHabitable": "80.95 m²",
-    "Client": "SPIRE",
+    "client": "SPIRE",
     "mission": "AVP - PC",
     "texte": `Le maître d’ouvrage souhaite réaliser une seconde construction en fond de parcelle, en aval de la maison existante. Pour des questions d'ordre économique et organisationnel, nous avons décidé d’utiliser le container comme choix de mode constructif pour ce projet. La nature de la structure et la rapidité de la mise en œuvre présentent des avantages. Il est étanche à l’air et à l’eau, robuste, durable et aisément transformable.
 
@@ -205,7 +204,7 @@ export const PROJECTS_DATA =
         images.villaBienDesire8
       ],
       "projet": "Villa Bien Desiré",
-      "description": "Construction neuve",
+      "description": "Maison individuelle",
       "catégorie": "projet tropiques",
       "ville": "Saint François, Guadeloupe",
       "programme": "Maison individuelle",
@@ -228,7 +227,6 @@ export const PROJECTS_DATA =
         images.gitesFonrosePlans,
         images.gitesFonrose1,
         images.gitesFonrose2,
-        images.gitesFonrose3,
         images.gitesFonrose4,
         images.gitesFonrose5,
         images.gitesFonrose6
@@ -293,7 +291,12 @@ export const PROJECTS_DATA =
     "montantTravaux": "",
     "client": "ACSTETUDE",
     "mission": "AVP - PC",
-    "texte": `En collaboration avec l’agence d’architecture ACSTETUDE, il a été question de concevoir la surélévation d’une maison et la création de deux logements neufs dans un quartier résidentiel de Châtillon. La parcelle est traversante entre deux rues au sein d’un tissu pavillonnaire dense, mêlant maisons mitoyennes, maisons isolées et petits collectifs. Le permis de construire présenté en mairie prévoit une division en trois lots dont les surfaces et les proportions sont similaires. Sur ces terrains ont été conçues deux maisons mitoyennes comprenant chacune un jardin privatif orienté face à la rue. Bien que gardant la même hauteur et le même rythme, les maisons présentent des architectures différentes, en lien avec la nature du tissu urbain et les constructions environnantes. La toiture joue un rôle décisif dans le dessin de la façade. Les constructions reposent sur un rez-de-chaussée vitré et minéral, en lien avec le jardin. Des volumes en saillie font le lien entre le R+1 et les combles, rendant la lecture de la façade plus dynamique au sein de la séquence urbaine. Les matériaux de façade, tels que la brique, les tuiles et le zinc, ont été choisis en accord avec les constructions voisines.`
+    "texte": `"En collaboration avec l’agence d’architecture ACSTETUDE, il a été question de concevoir la surélévation d’une maison et la création de deux logements neufs dans un quartier résidentiel de Châtillon.\nLa parcelle est traversante entre deux rues au sein d’un tissu pavillonnaire dense, mêlant maisons mitoyennes, maisons isolées et petits collectifs de logements. Le permis de construire présenté en mairie prévoit une division en trois lots dont les surfaces et les proportions sont similaires.
+
+    Les maisons mitoyennes sont orientées face à une rue peu passante, elles disposent d'un jardin privatif à l'avant.\nBien que gardant les mêmes proportions et le même rythme, les maisons présentent des composantes architecturales différentes pour participer à la variété de la rue.\nLes maisons reposent sur un rez-de-chaussée vitré à la hauteur constante dont les espaces donnent sur le jardin. La verticalité de l'ensemble est marquée par des volumes en saillie qui font le lien entre l'étage et les combles. À l'image des constructions traditionnelles, ils donnent de l'importance à la toiture dans la lecture de la façade. Ces éléments participent à la séquence urbaine en s'accordant au rythme de la rue.\nLes matériaux tels que la brique, la tuile et le zinc, ont été choisis en accord avec les constructions voisines.\n
+
+    Tout l'intérêt de ce projet réside dans la proposition d'une architecture contemporaine mais qui reste dans la continuité et la réinterprétation d'un vocabulaire traditionnel (toiture mansardée, chiens assis, ouvertures oblongues ...)."
+`
   },
   {
     "id": 12,
@@ -301,10 +304,10 @@ export const PROJECTS_DATA =
     "imageUrl": images.collectifColonelFabienv1,
     "imagesProjet": [
       images.collectifColonelFabienv1Plans,
+      images.collectifColonelFabienv14,
       images.collectifColonelFabienv11,
       images.collectifColonelFabienv12,
       images.collectifColonelFabienv13,
-      images.collectifColonelFabienv14,
       images.collectifColonelFabienv15,
     ],
     "projet": "Collectif Colonel Fabien ",
@@ -315,13 +318,14 @@ export const PROJECTS_DATA =
     "surfaceHabitable": "1015.50 m²",
     "maitriseOuvrage": "Eliasun",
     "mission": "Étude d'avant projet",
-    "texte": `En collaboration avec l'agence d'architecture ACSTETUDE, il s'agissait de réaliser une étude d'avant-projet pour la conception d'un habitat collectif horizontal dans un quartier résidentiel de Dammarie-lès-Lys. Le terrain, profond, se développe en lanière perpendiculairement à la rue. Le projet s'appuie sur l'emprise d'un ancien garage automobile.
+      "texte": `En collaboration avec l'agence d'architecture ACSTETUDE, il s'agissait de réaliser une étude d'avant - projet pour la conception d'un habitat collectif horizontal dans un quartier résidentiel de Dammarie-lès-Lys. Le terrain, profond, se développe en lanière perpendiculairement à la rue. Le projet s'appuie sur l'emprise d'un ancien garage automobile.
 
-    Les volumes bâtis s'organisent en trois ensembles : un premier groupe de logements en R+2+Combles côté rue, une série de duplex donnant sur une cour ouverte, et un dernier groupe de logements superposés à un parking commun en fond de parcelle. L'accès à la cour se fait par un passage couvert. Les masses bâties génèrent une forte intériorité, le projet étant protégé de la rue par le premier groupement. Cette intériorité est renforcée aux extrémités de la cour par les retours et la surélévation des volumes.
+      Les volumes bâtis s'organisent en trois ensembles : un premier groupe de logements en R+2+Combles côté rue, une série de duplex donnant sur une cour ouverte, et un dernier groupe de logements superposés à un parking commun en fond de parcelle. L'accès à la cour se fait par un passage couvert.Les masses bâties génèrent une forte intériorité, le projet étant protégé de la rue par le premier groupement.Cette intériorité est renforcée aux extrémités de la cour par les retours et la surélévation des volumes.
 
-    Depuis la rue, le premier ensemble s'inscrit dans la continuité d'une succession d'habitations individuelles et de petits commerces. Un des logements dispose d'un jardin privé, la construction est séquencée verticalement et les volumes ont des hauteurs progressives qui s'accordent avec les constructions voisines. Les duplex de la partie centrale et du fond de parcelle se situent à mi-chemin entre l'appartement et la maison de ville. Ils sont orientés sud-ouest et bénéficient de larges terrasses et d'espaces de jardin. Le séjour comprend une double hauteur qui apporte lumière et profondeur au cœur du logement.
+      Depuis la rue, le premier ensemble s'inscrit dans la continuité d'une succession d'habitations individuelles et de petits commerces. Un des logements dispose d'un jardin privé, la construction est séquencée verticalement et les volumes ont des hauteurs progressives qui s'accordent avec les constructions voisines. Les duplex de la partie centrale et du fond de parcelle se situent à mi-chemin entre l'appartement et la maison de ville.Ils sont orientés sud- ouest et bénéficient de larges terrasses et d'espaces de jardin. Le séjour comprend une double hauteur qui apporte lumière et profondeur au cœur du logement.
 
-    Ces dessins présentent la première version du projet de collectif validée par le service d'urbanisme. Après un premier bilan économique, le programme de logements n'est pas apparu assez rentable pour la maîtrise d'ouvrage. Une seconde version est présentée sur ce site.`
+      Ces dessins présentent la première version du projet de collectif validée par le service d'urbanisme.Après un premier bilan économique, le programme de logements n'est pas apparu assez rentable pour la maîtrise d'ouvrage.Une seconde version est présentée sur ce site.`
+
   },
   {
     "id": 13,
@@ -329,10 +333,10 @@ export const PROJECTS_DATA =
     "imageUrl": images.collectifColonelFabienv2,
     "imagesProjet": [
       images.collectifColonelFabienv2Plans,
+      images.collectifColonelFabienv24,
       images.collectifColonelFabienv21,
       images.collectifColonelFabienv22,
       images.collectifColonelFabienv23,
-      images.collectifColonelFabienv24,
       images.collectifColonelFabienv25,
     ],
     "projet": "Collectif Colonel Fabien",
@@ -469,7 +473,7 @@ export const PROJECTS_DATA =
       images.immeubleCerisiers3,
       images.immeubleCerisiers4,
       images.immeubleCerisiers5,
-      images.immeubleCerisiers7,
+
     ],
     "projet": "Immeuble des Cerisiers",
     "catégorie": "habitat collectif urbain",

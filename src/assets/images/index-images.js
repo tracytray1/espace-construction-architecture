@@ -124,7 +124,11 @@ export { default as immeubleChoisy2 } from './projects/Alfortville/alfortville-2
 export { default as immeubleChoisy3 } from './projects/Alfortville/alfortville-3.jpg';
 export { default as immeubleChoisy4 } from './projects/Alfortville/alfortville-4.jpg';
 export { default as immeubleChoisy5 } from './projects/Alfortville/alfortville-5.jpg';
+export { default as immeubleChoisy6 } from './projects/Alfortville/alfortville-6.jpg';
 export { default as immeubleChoisy7 } from './projects/Alfortville/alfortville-7.jpg';
+export { default as immeubleChoisy8 } from './projects/Alfortville/alfortville-8.jpg';
+export { default as immeubleChoisy9 } from './projects/Alfortville/alfortville-9.jpg';
+export { default as immeubleChoisy10 } from './projects/Alfortville/alfortville-10.jpg';
 
 
 export { default as immeubleCerisiers } from './homepage/immeuble-des-cerisiers-thorigny-sur-marne.jpg';
