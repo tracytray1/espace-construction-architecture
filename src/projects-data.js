@@ -5,7 +5,7 @@ export const PROJECTS_DATA =
  [
     {
       "id": 1,
-      "title": "Maison Aganahi Abomey Calavi",
+      "title": "Villa Aganahi Abomey Calavi",
       "imageUrl": images.maisonAganahi,
       "imagesProjet": [
         images.maisonAganahiPlans,
@@ -13,7 +13,7 @@ export const PROJECTS_DATA =
         images.maisonAganahi2,
         images.maisonAganahi3,
       ],
-      "projet": "Maison Aganahi",
+     "projet": "Villa Aganahi",
       "description": "Construction neuve",
       "site": "Abomey Calavi, Bénin",
       "ville": "Abomey Calavi",
@@ -21,18 +21,17 @@ export const PROJECTS_DATA =
       "surfaceHabitable": "194,84 m²",
       "maitriseOuvrage": "Aldwin Aganahi",
       "mission": "Étude d'avant projet",
-      "livraison": "Janvier 2018",
-      "texte": `Le propriétaire d'un terrain situé dans une zone résidentielle d'Abomey-Calavi, au Bénin, nous a confié l'étude d'un projet de maison individuelle. La mission s'est limitée à l'avant-projet, une équipe locale devant assurer les dernières résolutions constructives ainsi que le suivi de chantier sur place.
+      "texte": `Ce projet de maison individuelle est situé au Bénin, dans la commune d'Abomey-Calavi. Le propriétaire du terrain nous a confié l'étude d'avant-projet, une équipe locale devant prendre le relais et assurer les études complémentaires ainsi que le suivi de chantier. Le climat dans cette région d'Afrique de l'Ouest est comparable au climat tropical des Antilles Françaises. Il est relativement humide et comprend des alizés, des vents réguliers qui soufflent d'Ouest en Est tout au long de l'année.
 
-    La maison s'implante sur une parcelle régulière et relativement plate, d'une profondeur de 30 m et d'une largeur de 10 m. Pour répondre à cette géométrie, le plan du logement s'organise en trois carrés successifs de 10 m par 10 m. La partie centrale accueille le cœur du logement : l'espace de vie en double hauteur, traversant et surplombé par une mezzanine. Côté rue, cet espace s'ouvre sur une terrasse extérieure légèrement surélevée par rapport à la cour d'entrée, prolongeant la cuisine de manière à la fois spatiale et fonctionnelle. De l'autre côté, il se prolonge vers une terrasse ouverte sur un jardin aux proportions équilibrées.
+La maison s'implante sur une parcelle régulière et relativement plate, d'une profondeur de 30 m et d'une largeur de 10 m. Pour répondre à cette géométrie, le plan du logement s'organise en trois parties successives de 10 m par 10 m. La partie centrale forme le cœur du logement : l'espace de vie en double hauteur, traversant et surplombé par une mezzanine. Côté rue, cet espace s'ouvre sur une terrasse extérieure légèrement surélevée par rapport à la cour d'entrée, prolongeant la cuisine de manière spatiale et fonctionnelle. De l'autre côté, une façade épaisse fait le lien avec une terrasse ouverte sur un jardin clos.
 
-    La transition intérieur-extérieur est assurée par une façade épaisse conçue comme un filtre au vent, favorisant la ventilation naturelle dans l'ensemble du logement. Des jalousies et ventelles en partie basse permettent de réguler les entrées d'air traversant successivement le séjour et la cuisine dans le sens du vent. La façade sur rue est largement ouverte pour renforcer l'aspiration, tandis qu'une écope de toiture en partie centrale conditionne également la circulation d'air depuis un point haut lorsque la cuisine et l'entrée sont fermées.
+La volumétrie du projet est conçue pour favoriser la ventilation naturelle par aspiration : la partie de l'ouvrage située sous le vent est plus haute que la partie au vent et forme ainsi une zone dépressionnaire renforcée par la forme de la toiture. La façade ouest côté jardin est conçue comme un filtre au vent, gérant la ventilation naturelle dans l'ensemble du logement tout en protégeant les pièces de vie des rayons du soleil. Des jalousies et ventelles en partie basse permettent de réguler les entrées d'air traversant successivement le séjour et la cuisine dans le sens du vent. La façade sur rue et l'écope de toiture sont largement ouvertes pour renforcer le mécanisme d'aspiration.
 
-    Les réflexions liées à la conception bioclimatique du logement ont largement déterminé la coupe. L'étage est composé de deux volumes décalés et espacés qui accueillent les chambres. Ce jeu de décalage, perçu côté rue comme l'élément structurant de la façade, confère à l'ensemble une dynamique particulière. Les volumes traités en surplomb, associés au balcon et à la casquette, renforcent l'impression d'un étage flottant au-dessus du rez-de-chaussée.`
+La conception bioclimatique du logement a largement déterminé le profil du projet. L'étage est composé de deux volumes décalés et espacés qui accueillent les chambres. Ce jeu de décalage, perçu côté rue comme l'élément structurant de la façade, confère à l'ensemble une dynamique particulière. Les volumes traités en surplomb, associés au balcon et à la casquette, renforcent l'impression d'un étage flottant au-dessus du rez-de-chaussée.`
     },
     {
       "id": 2,
-      "title": "Villa De Lutiis Thorigny-sur-Marne",
+      "title": "Villa De Luvis Lagny-sur-Marne",
       "imageUrl": images.villaDeLutiis,
       "imagesProjet": [
         images.villaDeLutiisPlans,
@@ -40,22 +39,21 @@ export const PROJECTS_DATA =
         images.villaDeLutiis2,
         images.villaDeLutiis3,
       ],
-      "projet": "Villa De Lutiis",
+      "projet": "Villa De Luvis",
       "description": "Construction neuve",
-      "ville": "Thorigny-sur-Marne",
+      "ville": "Lagny-sur-Marne",
       "programme": "Maison individuelle",
       "surfaceHabitable": "141.19 m²",
       "montantTravaux": "247 500.00 €",
-      "maitriseOuvrage": "Ronan de Lutiis",
+      "maitriseOuvrage": "M. et Mme De Luvis",
       "mission": "Complète avec direction des travaux",
       "livraison": "Juin 2024",
-      "texte": `Un ami de l'agence récemment propriétaire d'un terrain situé à Thorigny-sur-Marne en région parisienne nous a chargés de concevoir une maison individuelle. Il nous a confié la mission complète de maîtrise d'œuvre, comprenant les études architecturales à toutes les échelles ainsi que le suivi des travaux.
+      "texte": `M. et Mme De Luvis, récemment propriétaires d'un terrain situé aux environs de Lagny-sur-Marne en région parisienne nous ont chargé de concevoir une maison individuelle. Ils nous ont confié la mission complète de maîtrise d'œuvre, comprenant les études architecturales à toutes les échelles ainsi que le suivi des travaux.
 
-    La maison se développe sur un terrain en longueur relativement plat. Le plan du logement se repose sur le pignon nord où sont placées les pièces de service afin de libérer l'espace sur une travée centrale traversante. Le logement donne sur deux massifs boisés à l'est comme à l'ouest. Les volumes du projet s'organisent autour d'une double hauteur de géométrie cubique située face au jardin. Elle apporte de la lumière au cœur d'un logement relativement profond en raison de la géométrie de la parcelle.
+      La maison se développe sur un terrain en longueur relativement plat. Le plan du logement s'appuie sur le pignon nord où sont placées les pièces de service afin de libérer l'espace de vie sur une travée centrale traversante. Le logement donne sur deux massifs boisés de part et d'autre de la travée. On y trouve une grande terrasse à l'ouest faisant le lien entre le séjour et la rue, l'espace salle à manger en position centrale et le salon en double hauteur orienté est. Ce dernier apporte de la lumière au cœur d'un logement relativement profond en raison de la géométrie de la parcelle. L'étage ne se structure pas à l'aplomb du rez-de-chaussée. Il est traité comme un élément flottant parfois en retrait ou parfois en saillie. Il comprend des chambres, une salle de bain et une mezzanine se développant autour de la double hauteur. La lecture de la maison depuis la rue est marquée par des lignes horizontales dues à la volumétrie de l'étage. À l'arrière la composition se retourne et paraît plus compacte, dominée par la double hauteur du séjour.
 
-    À l'ouest, une terrasse couverte fait le lien entre le séjour et la rue. L'étage ne se structure pas à l'aplomb du rez-de-chaussée. Il est traité comme un élément flottant, parfois en retrait ou parfois en saillie. Il se compose des chambres et d'une mezzanine donnant sur le salon via la double hauteur. La lecture de la maison depuis la rue est dominée par des lignes horizontales marquées par la volumétrie de l'étage. À l'arrière la maison paraît plus compacte et cubique, dominée par la double hauteur du séjour.
-
-    La construction présente une structure simple, les portées sont courtes. Le mode constructif choisi est la brique creuse doublée d'un isolant laine de verre en ITE. Ce projet de construction a été confié à l'entreprise générale REM BAT, partenaire de longue date de l'agence. La qualité principale de ce projet réside dans l'équilibre entre la dimension économique de la construction permise par l'emploi de techniques traditionnelles et la richesse spatiale que suppose un langage moderne.`
+      La construction présente une structure simple, les portées sont courtes. Le mode constructif choisi est la brique creuse doublée d'un isolant laine de verre en ITE. Ce projet de construction a été confié à l'entreprise générale REM BAT, partenaire de l'agence. La qualité principale de ce projet réside dans l'équilibre entre la dimension économique de la construction permise par l'emploi de techniques traditionnelles et la richesse spatiale que sous-tend une architecture moderne.
+      `
     },
     {
       "id": 3,
@@ -75,11 +73,11 @@ export const PROJECTS_DATA =
       "maitriseOuvrage": "M. et Mme Duclos",
       "mission": "Complète avec direction des travaux",
       "livraison": "Décembre 2023",
-      "texte": `M. et Mme Duclos nous ont confié l'étude d'un projet d'extension de maison individuelle à Douy-la-Ramée en Seine-et-Marne. Le logement se situe dans un lotissement comprenant des propriétés disposant de beaux espaces de jardins.
+      "texte": `M. et Mme Duclos nous ont confié l'étude d'un projet d'extension de maison individuelle à Douy-la-Ramée en Seine-et-Marne. Le logement se situe dans un lotissement comprenant de grands terrains. L'emprise au sol de la construction dans sa parcelle est assez réduite. Elle nous a permis d'ouvrir le pignon sud et d'étendre le logement horizontalement.
 
-    La densité relativement faible de la parcelle nous a permis de travailler sur une extension du côté d'un pignon aveugle. La façade est élargie et l'extension ne rajoute pas de contrainte à l'ensoleillement de la maison. Elle se compose d'une suite parentale ouverte par un coulissant sur une pièce de vie prolongeant le séjour existant. Le décalage du volume de l'extension par rapport à l'existant est l'occasion de placer une pergola faisant le lien entre l'espace de vie et le jardin. La piscine et la plage faite d'un deck en matériau composite composent un espace se reposant sur le séjour de la maison et son extension.
+      L'extension se compose d'une suite parentale et d'un espace salon prolongeant la pièce de vie. Le débord du volume de l'extension côté ouest est l'occasion de placer une pergola. Elle devient le support de la transition intérieur-extérieur du logement. La terrasse faite d'un deck en matériau composite participe à une composition diagonale organisée entre l'espace de vie et son extension, la pergola et la piscine. La toiture-terrasse est végétalisée, elle est accessible depuis les chambres de l'étage.
 
-    La toiture-terrasse végétalisée est accessible depuis les chambres de l'étage. La construction présente une structure simple, les portées sont courtes. Le mode constructif choisi est la brique creuse doublée d'un isolant laine de verre en ITE. Ce projet de construction a été confié à l'entreprise générale REM BAT, partenaire de longue date de l'agence. Le budget alloué à ce projet étant limité, il a été conçu en deux temps. La première phase actuellement terminée comprend les parties intérieures de l'extension et une seconde phase permettra de réaliser les parties couvrantes extérieures.`
+      La construction présente une structure simple, les portées sont courtes. Le mode constructif choisi est la brique creuse doublée d'un isolant laine de verre en ITE. Ce projet de construction a été confié à l'entreprise générale REM BAT, partenaire de l'agence. Le budget alloué à ce projet étant limité, il a été conçu en deux temps. La première phase comprend les parties intérieures de l'extension tandis que la seconde concerne la pergola et les parties couvrantes extérieures.`
     },
   {
     "id": 4,
@@ -160,6 +158,11 @@ export const PROJECTS_DATA =
       images.pavillonPetitHavre1,
       images.pavillonPetitHavre2,
       images.pavillonPetitHavre3,
+      images.pavillonPetitHavre4,
+      images.pavillonPetitHavre5,
+      images.pavillonPetitHavre6,
+      images.pavillonPetitHavre7,
+      images.pavillonPetitHavre8,
       images.pavillonPetitHavrePlans2,
 
     ],

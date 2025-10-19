@@ -39,9 +39,9 @@ export { default as immeubleDivisionLeclerc1 } from './projects/Bourget/bourget-
 export { default as immeubleDivisionLeclercPlans1 } from './projects/Bourget/bourget-plans-1.jpg';
 export { default as immeubleDivisionLeclercPlans2 } from './projects/Bourget/bourget-plans-2.jpg';
 
-export { default as maisonAganahi }  from './homepage/maison-aganahi-abomey-calavi-benin.png';
+export { default as maisonAganahi }  from './homepage/maison-aganahi-abomey-calavi-benin.jpg';
 export { default as maisonAganahi1 } from './projects/Abomey/abomey-1.jpg';
-export { default as maisonAganahi2 } from './projects/Abomey/abomey-2.png';
+export { default as maisonAganahi2 } from './projects/Abomey/abomey-2.jpg';
 export { default as maisonAganahi3 } from './projects/Abomey/abomey-3.jpg';
 export { default as maisonAganahiPlans } from './projects/Abomey/plans-abomey.jpg';
 
@@ -57,11 +57,12 @@ export { default as maisonFayolPlans } from './projects/Dampmart/dampmart-plans.
 
 export { default as maisonSalles }  from './homepage/maison-salles-saint-maur-des-fosses.jpg';
 export { default as maisonSalles1 } from './projects/Saint-Maur/saint-maur-1.jpg';
+export { default as maisonSalles2 } from './projects/Saint-Maur/saint-maur-2.jpg';
 export { default as maisonSallesPlans } from './projects/Saint-Maur/saint-maur-plans.jpg';
 
 
 export { default as maisonsChampsFleuris }  from './homepage/maisons-champs-fleuris-chatillon.jpg';
-export { default as maisonsChampsFleuris1 } from './projects/Chatillon/chatillon-1.png';
+export { default as maisonsChampsFleuris1 } from './projects/Chatillon/chatillon-1.jpg';
 export { default as maisonsChampsFleuris2 } from './projects/Chatillon/chatillon-2.jpg';
 export { default as maisonsChampsFleuris3 } from './projects/Chatillon/chatillon-3.jpg';
 export { default as maisonsChampsFleurisPlans1 } from './projects/Chatillon/chatillon-plans-1.jpg';
@@ -73,6 +74,11 @@ export { default as pavillonPetitHavre }  from './homepage/pavillon-petit-havre-
 export { default as pavillonPetitHavre1 } from './projects/Gosier/gosier-1.jpg';
 export { default as pavillonPetitHavre2 } from './projects/Gosier/gosier-2.jpg';
 export { default as pavillonPetitHavre3 } from './projects/Gosier/gosier-3.jpg';
+export { default as pavillonPetitHavre4 } from './projects/Gosier/gosier-4.jpg';
+export { default as pavillonPetitHavre5 } from './projects/Gosier/gosier-5.jpg';
+export { default as pavillonPetitHavre6 } from './projects/Gosier/gosier-6.jpg';
+export { default as pavillonPetitHavre7 } from './projects/Gosier/gosier-7.jpg';
+export { default as pavillonPetitHavre8 } from './projects/Gosier/gosier-8.jpg';
 export { default as pavillonPetitHavrePlans1 } from './projects/Gosier/gosier-plans-1.jpg';
 export { default as pavillonPetitHavrePlans2 } from './projects/Gosier/gosier-plans-2.jpg';
 
@@ -112,23 +118,19 @@ export { default as villasDesVarennes2 } from './projects/SGLA/sgla-2.jpg';
 export { default as villasDesVarennesPlans } from './projects/SGLA/sgla-plans.jpg';
 
 //Missing
-export { default as immeubleChoisy } from './homepage/immeuble-choisy-alfortville.png';
-export { default as immeubleChoisy1 } from './projects/Alfortville/alfortville-1.png';
-export { default as immeubleChoisy2 } from './projects/Alfortville/alfortville-2.png';
-export { default as immeubleChoisy3 } from './projects/Alfortville/alfortville-3.png';
-export { default as immeubleChoisy4 } from './projects/Alfortville/alfortville-4.png';
-export { default as immeubleChoisy5 } from './projects/Alfortville/alfortville-5.png';
-export { default as immeubleChoisy6 } from './projects/Alfortville/alfortville-6.png';
-export { default as immeubleChoisy7 } from './projects/Alfortville/alfortville-7.png';
-export { default as immeubleChoisy8 } from './projects/Alfortville/alfortville-8.png';
-export { default as immeubleChoisy9 } from './projects/Alfortville/alfortville-9.png';
-export { default as immeubleChoisy10 } from './projects/Alfortville/alfortville-10.png';
+export { default as immeubleChoisy } from './homepage/immeuble-choisy-alfortville.jpg';
+export { default as immeubleChoisy1 } from './projects/Alfortville/alfortville-1.jpg';
+export { default as immeubleChoisy2 } from './projects/Alfortville/alfortville-2.jpg';
+export { default as immeubleChoisy3 } from './projects/Alfortville/alfortville-3.jpg';
+export { default as immeubleChoisy4 } from './projects/Alfortville/alfortville-4.jpg';
+export { default as immeubleChoisy5 } from './projects/Alfortville/alfortville-5.jpg';
+export { default as immeubleChoisy7 } from './projects/Alfortville/alfortville-7.jpg';
 
 
 export { default as immeubleCerisiers } from './homepage/immeuble-des-cerisiers-thorigny-sur-marne.jpg';
-export { default as immeubleCerisiers1 } from './projects/Thorigny-Cerisiers/thorigny-cerisiers-1.png';
-export { default as immeubleCerisiers2 } from './projects/Thorigny-Cerisiers/thorigny-cerisiers-2.png';
-export { default as immeubleCerisiers3 } from './projects/Thorigny-Cerisiers/thorigny-cerisiers-3.png';
-export { default as immeubleCerisiers4 } from './projects/Thorigny-Cerisiers/thorigny-cerisiers-4.png';
-export { default as immeubleCerisiers5 } from './projects/Thorigny-Cerisiers/thorigny-cerisiers-5.png';
+export { default as immeubleCerisiers1 } from './projects/Thorigny-Cerisiers/thorigny-cerisiers-1.jpg';
+export { default as immeubleCerisiers2 } from './projects/Thorigny-Cerisiers/thorigny-cerisiers-2.jpg';
+export { default as immeubleCerisiers3 } from './projects/Thorigny-Cerisiers/thorigny-cerisiers-3.jpg';
+export { default as immeubleCerisiers4 } from './projects/Thorigny-Cerisiers/thorigny-cerisiers-4.jpg';
+export { default as immeubleCerisiers5 } from './projects/Thorigny-Cerisiers/thorigny-cerisiers-5.jpg';
 export { default as immeubleCerisiers7 } from './projects/Thorigny-Cerisiers/thorigny-cerisiers-7.png';
