@@ -4,29 +4,13 @@ import LogoEspaceConstructionSansTexte from '../../assets/logo-espace-constructi
 import './InternalLinks.scss';
 
 const InternalLinks = ({ allProjects, foundProject }) => {
-  // On trouve l'index du projet actuel
-  const currentIndex = allProjects.findIndex(p => p.id === foundProject.id);
+  const currentCategory = foundProject["catégorie"];
 
-  // On prend les 4 projets suivants (en évitant les erreurs si on arrive à la fin du tableau)
-  let relatedProjects = [];
-
-  if (currentIndex !== -1) {
-    // On prend les projets après le projet actuel
-    const projectsAfter = allProjects.slice(currentIndex + 1);
-
-    // Si on n'a pas assez de projets après, on prend aussi ceux d'avant
-    if (projectsAfter.length < 4) {
-      const projectsBefore = allProjects.slice(0, currentIndex);
-      relatedProjects = [...projectsAfter, ...projectsBefore].slice(0, 4);
-    } else {
-      relatedProjects = projectsAfter.slice(0, 4);
-    }
-  }
-
-  // Si on n'a pas de projets associés, on prend les 4 premiers
-  if (relatedProjects.length === 0) {
-    relatedProjects = allProjects.slice(0, 4);
-  }
+  // On filtre les projets ayant la même catégorie, sauf celui en cours
+  const relatedProjects = allProjects.filter(
+    p => p["catégorie"] === currentCategory && p.id !== foundProject.id
+  );
+console.log(relatedProjects)
 
   return (
     <div className="internal-links">
