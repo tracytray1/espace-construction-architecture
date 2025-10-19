@@ -42,10 +42,12 @@ const ProjectInfo = ({foundProject}) => {
         <dt>Mission</dt>
         <dd>{foundProject.mission}</dd>
       </dl>
-      <dl className='projet-detail_info-item'>
-        <dt>Livraison</dt>
-        <dd>{foundProject.livraison}</dd>
-      </dl>
+      {foundProject.livraison &&
+        <dl className='projet-detail_info-item'>
+          <dt>Livraison</dt>
+          <dd>{foundProject.livraison}</dd>
+        </dl>
+      }
     </div>
   )
 }
