@@ -60,7 +60,7 @@ const Splash = () => {
   return (
     <div className="splash">
       <img
-        src="/src/assets/images/homepage/villa-mahroum-andelu.jpg"
+        src="/assets/images/homepage/villa-mahroum-andelu.jpg"
         alt="Espace Construction Architecture - Entrer"
         className="splash__image"
       />
