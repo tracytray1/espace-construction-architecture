@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import splashImage from '../assets/images/homepage/villa-mahroum-andelu.jpg';
 import './Splash.scss';
 
 const Splash = () => {
@@ -60,7 +61,7 @@ const Splash = () => {
   return (
     <div className="splash">
       <img
-        src="/assets/images/homepage/villa-mahroum-andelu.jpg"
+        src={splashImage}
         alt="Espace Construction Architecture - Entrer"
         className="splash__image"
       />
