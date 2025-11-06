@@ -54,6 +54,14 @@
 /* Mobile */
 @media (max-width: 768px) {
   .projects-container {
+    grid-template-columns: repeat(2, 1fr); // deux colonnes
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-container {
     grid-template-columns: 1fr; // une seule colonne
     gap: 0.5rem;
     padding: 0.5rem;

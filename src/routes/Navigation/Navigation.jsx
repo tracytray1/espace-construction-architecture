@@ -9,7 +9,7 @@ const Navigation = () => {
   return (
     <Fragment>
       <div className="navigation" id='wrap'>
-        <NavLink className="logo-container" to="/">
+        <NavLink className="logo-container" to="/home">
           <LogoEspaceConstruction className="logo" />
         </NavLink>
         {/* Bouton hamburger (visible seulement sur mobile) */}
@@ -25,7 +25,7 @@ const Navigation = () => {
         {/* Liens navigation */}
         <div className={`nav-links-container ${isMenuOpen ? 'open' : ''}`}>
           <NavLink
-            to="/"
+            to="/home"
             className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
             onClick={() => setIsMenuOpen(false)}
           >

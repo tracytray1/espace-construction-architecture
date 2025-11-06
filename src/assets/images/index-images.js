@@ -21,6 +21,7 @@ export { default as collectifColonelFabienv2Plans } from './projects/DammarieCF-
 export { default as collectifMarechalFoch }  from './homepage/collectif-marechal-foch-dammarie-les-lys.jpg';
 export { default as collectifMarechalFoch1 } from './projects/DammarieMF/dammarie-mf-1.jpg';
 export { default as collectifMarechalFoch2 } from './projects/DammarieMF/dammarie-mf-2.jpg';
+export { default as collectifMarechalFoch3 } from './projects/DammarieMF/dammarie-mf-3.jpg';
 export { default as collectifMarechalFochPlans } from './projects/DammarieMF/dammarie-mf-plans.jpg';
 
 
