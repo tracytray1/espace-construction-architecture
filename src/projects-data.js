@@ -251,8 +251,10 @@ export const PROJECTS_DATA =
     "id": 10,
     "title": "Maison Salles Saint-Maur-des-Fossés",
     "imageUrl": images.maisonSalles,
+    "imageUrlHero": images.maisonSalles2,
     "imagesProjet": [
       images.maisonSallesPlans,
+      images.maisonSalles,
       images.maisonSalles1,
     ],
     "projet": "Maison Salles",
@@ -384,13 +386,15 @@ export const PROJECTS_DATA =
     "id": 15,
     "title": "Collectif Maréchal Foch Dammarie lès Lys",
     "imageUrl": images.collectifMarechalFoch,
+    "imageUrlHero": images.collectifMarechalFoch3,
     "imagesProjet": [
       images.collectifMarechalFochPlans,
+      images.collectifMarechalFoch,
       images.collectifMarechalFoch1,
       images.collectifMarechalFoch2
     ],
     "projet": "Collectif Maréchal Foch",
-    "description": "Commerce et collectif de logements",
+    "description": "Collectif de logements",
     "catégorie": "collectifs résidentiels",
     "ville": "Dammarie-lès-Lys",
     "site": "Dammarie-lès-Lys",
@@ -473,7 +477,6 @@ export const PROJECTS_DATA =
       images.immeubleCerisiers3,
       images.immeubleCerisiers4,
       images.immeubleCerisiers5,
-
     ],
     "projet": "Immeuble des Cerisiers",
     "catégorie": "habitat collectif urbain",

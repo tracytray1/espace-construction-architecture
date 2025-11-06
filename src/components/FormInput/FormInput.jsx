@@ -62,7 +62,6 @@ const FormInput = () => {
 
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
-      <h2>Nous contacter</h2>
 
       <div className="row">
         <label>

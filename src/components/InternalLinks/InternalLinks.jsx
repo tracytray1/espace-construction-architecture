@@ -10,7 +10,7 @@ const InternalLinks = ({ allProjects, foundProject }) => {
   const relatedProjects = allProjects.filter(
     p => p["catégorie"] === currentCategory && p.id !== foundProject.id
   );
-console.log(relatedProjects)
+  console.log(relatedProjects)
 
   return (
     <div className="internal-links">
@@ -26,7 +26,7 @@ console.log(relatedProjects)
 
 // Composant ProjectCard interne avec le même design que la homepage
 const InternalProjectCard = ({ project }) => {
-  const { imageUrl, projet, ville, id } = project;
+  const { imageUrl, projet, ville, description, id } = project;
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -65,6 +65,7 @@ const InternalProjectCard = ({ project }) => {
             <div className='project-body-container-detail'>
               <p>{projet}</p>
               <p>{ville}</p>
+              <p>{description}</p>
             </div>
           </div>
         </Link>

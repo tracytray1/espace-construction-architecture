@@ -17,7 +17,7 @@ const Projet = () => {
   return (
     <div className='project-detail_wrapper'>
 
-      <ProjectHero imageUrl={foundProject.imageUrl} title={foundProject.title} imageUrlDuo={foundProject.imageUrlDuo} />
+      <ProjectHero imageUrl={foundProject.imageUrl} title={foundProject.title} imageUrlHero={foundProject.imageUrlHero} />
       <ProjectHeader project={foundProject.projet} city={foundProject.ville} description={foundProject.description} />
 
       <div className='project-detail_body'>

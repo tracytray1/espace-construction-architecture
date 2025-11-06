@@ -1,21 +1,21 @@
 import './ProjectHero.scss'
 
-const ProjectHero = ({ imageUrl, title, imageUrlDuo }) => {
+const ProjectHero = ({ imageUrl, title, imageUrlHero }) => {
   return (
     <div className='project-detail_hero'>
-      {imageUrlDuo ? (
+      {imageUrlHero ? (
         <img
-          key={i}
-          src={imageUrlDuo}
-          alt={`${title} - visuel ${i + 1}`}
+          src={imageUrlHero}
+          alt={title}
           className="project-detail_image"
-            />
-          ) : (
-      <img
-        src={imageUrl}
-        alt={title}
-        className="project-detail_image"
-      />)}
+        />
+      ) : (
+        <img
+          src={imageUrl}
+          alt={title}
+          className="project-detail_image"
+        />
+      )}
     </div>
   )
 }
