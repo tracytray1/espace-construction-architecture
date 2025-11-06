@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import splashImage from '../assets/images/homepage/villa-mahroum-andelu.jpg';
+import splashImage from '../../assets/images/homepage/villa-mahroum-andelu.jpg';
 import './Splash.scss';
 
 const Splash = () => {
