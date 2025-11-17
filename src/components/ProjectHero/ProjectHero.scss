@@ -1,17 +1,36 @@
-  .project-detail_hero {
+.project-detail_hero {
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .project-detail_image {
     width: 100%;
-    height: auto;
-    overflow: hidden;
-
-    .project-detail_image {
-      width: 100%;
-      object-fit: cover;
-      height: auto;
-    }
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
+}
 
-  @media (max-width: 768px) {
-    .project-detail_hero {
-      height: 40vh;
-    }
+// Tablette
+@media (max-width: 1024px) {
+  .project-detail_hero {
+    height: 60vh;
   }
+}
+
+// Mobile
+@media (max-width: 768px) {
+  .project-detail_hero {
+    height: 40vh;
+  }
+}
+
+// Petit mobile
+@media (max-width: 480px) {
+  .project-detail_hero {
+    height: 35vh;
+  }
+}
