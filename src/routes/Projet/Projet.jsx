@@ -12,19 +12,38 @@ const Projet = () => {
   const { id } = useParams();
   const foundProject = PROJECTS_DATA.find(p => p.id === parseInt(id));
 
-  if (!foundProject) return <p>Projet non trouvé</p>;
+  if (!foundProject) {
+    return (
+      <div className='project-detail_wrapper'>
+        <p style={{ padding: '2rem', textAlign: 'center' }}>
+          Projet non trouvé
+        </p>
+      </div>
+    );
+  }
 
   return (
     <div className='project-detail_wrapper'>
-
-      <ProjectHero imageUrl={foundProject.imageUrl} title={foundProject.title} imageUrlHero={foundProject.imageUrlHero} />
-      <ProjectHeader project={foundProject.projet} city={foundProject.ville} description={foundProject.description} />
+      <ProjectHero
+        imageUrl={foundProject.imageUrl}
+        title={foundProject.title}
+        imageUrlHero={foundProject.imageUrlHero}
+      />
+      <ProjectHeader
+        project={foundProject.projet}
+        city={foundProject.ville}
+        description={foundProject.description}
+      />
 
       <div className='project-detail_body'>
         <p className='project'>{foundProject.texte}</p>
       </div>
 
-      <ProjectDetailPhotos photos={foundProject.imagesProjet} project={foundProject.projet} id={foundProject.id} />
+      <ProjectDetailPhotos
+        photos={foundProject.imagesProjet}
+        project={foundProject.projet}
+        id={foundProject.id}
+      />
       <ProjectInfo foundProject={foundProject} />
       <InternalLinks allProjects={PROJECTS_DATA} foundProject={foundProject} />
       <ProjectFooter />

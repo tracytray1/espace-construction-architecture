@@ -132,7 +132,7 @@ const FormInput = () => {
             <option value="">Veuillez sélectionner</option>
             <option value="mission-partielle">Mission partielle (permis de construire)</option>
             <option value="mission-complete">Mission complète (direction travaux)</option>
-            <option value="mission-complete">Autre</option>
+            <option value="autre">Autre</option>
           </select>
           </label>
       </div>

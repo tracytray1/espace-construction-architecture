@@ -1,5 +1,4 @@
 html {
-  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
@@ -26,4 +25,6 @@ h2, h3 {
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
