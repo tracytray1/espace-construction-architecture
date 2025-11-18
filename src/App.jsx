@@ -14,20 +14,22 @@ function App() {
   const location = useLocation();
 
   return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        {/* Splash screen as homepage (no navigation) */}
-        <Route index element={<PageTransition><Splash /></PageTransition>} />
 
-        {/* All site routes wrapped with Navigation */}
-        <Route element={<Navigation />}>
-          <Route path="home" element={<PageTransition><Home /></PageTransition>} />
-          <Route path="contact" element={<PageTransition><Contact /></PageTransition>} />
-          <Route path="projets/:id" element={<PageTransition><Projet /></PageTransition>} />
-          <Route path="a-propos" element={<PageTransition><AboutPage /></PageTransition>} />
-        </Route>
-      </Routes>
-    </AnimatePresence>
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          {/* Splash screen as homepage (no navigation) */}
+          <Route index element={<PageTransition><Splash /></PageTransition>} />
+
+          {/* All site routes wrapped with Navigation */}
+          <Route element={<Navigation />}>
+            <Route path="home" element={<PageTransition><Home /></PageTransition>} />
+            <Route path="contact" element={<PageTransition><Contact /></PageTransition>} />
+            <Route path="projets/:id" element={<PageTransition><Projet /></PageTransition>} />
+            <Route path="a-propos" element={<PageTransition><AboutPage /></PageTransition>} />
+          </Route>
+        </Routes>
+      </AnimatePresence>
+
   )
 }
 

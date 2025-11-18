@@ -1,6 +1,6 @@
 .project-detail_hero {
   width: 100%;
-  height: 70vh;
+  height: auto;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -8,7 +8,7 @@
 
   .project-detail_image {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     object-position: center;
   }
@@ -17,20 +17,20 @@
 // Tablette
 @media (max-width: 1024px) {
   .project-detail_hero {
-    height: 60vh;
+    height: auto;
   }
 }
 
 // Mobile
 @media (max-width: 768px) {
   .project-detail_hero {
-    height: 40vh;
+    height: auto;
   }
 }
 
 // Petit mobile
 @media (max-width: 480px) {
   .project-detail_hero {
-    height: 35vh;
+    height: auto;
   }
 }
