@@ -17,12 +17,6 @@
     object-position: center;
     z-index: 1;
     transition: all 0.3s ease;
-
-    @media (max-width: 1024px),
-    (max-width: 768px) {
-      object-fit: contain;
-      background-color: white;
-    }
   }
 
   /* ============================
@@ -30,6 +24,8 @@
   ============================= */
   &__mask {
     position: absolute;
+    background: white;
+    opacity: 1;
     z-index: 5;
     pointer-events: none;
 
@@ -40,6 +36,15 @@
       position: relative;
       pointer-events: none;
 
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(255, 255, 255, 0.35);
+        backdrop-filter: grayscale(100%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
     }
   }
 
@@ -81,74 +86,103 @@
     &:hover .splash__mask--center::after {
       opacity: 1;
     }
+
+    /* Apparition progressive au hover du link */
+    &:hover~.splash__text p:nth-child(1) {
+      opacity: 1;
+      transform: translateX(0);
+      transition-delay: 0.1s;
+    }
+
+    &:hover~.splash__text p:nth-child(2) {
+      opacity: 1;
+      transform: translateX(0);
+      transition-delay: 0.3s;
+    }
+
+    &:hover~.splash__text p:nth-child(3) {
+      opacity: 1;
+      transform: translateX(0);
+      transition-delay: 0.5s;
+    }
+  }
+
+/* ============================
+   TEXTE SPLASH
+============================= */
+&__text {
+  position: absolute;
+  left: 31.9%;
+  top: 82.6%;
+  transform: translateY(-50%);
+  z-index: 6;
+
+  /* TABLETTE */
+  @media (max-width: 1024px) {
+    left: 29.3%;
+    top: 79.3%;
+  }
+
+  /* MOBILE L */
+  @media (max-width: 768px) {
+    left: 31%;
+    top: 63.6%;
+  }
+
+  /* MOBILE M */
+  @media (max-width: 480px) {
+    left: 32.4%;
+    top: 59%;
+  }
+
+  /* MOBILE S */
+  @media (max-width: 380px) {
+    left: 33.4%;
+    top: 59.4%;
   }
 
   /* ============================
-     TEXTE SPLASH
+     MODE PAYSAGE (LANDSCAPE)
   ============================= */
-  &__text {
-    position: absolute;
-    bottom: 10%;
-    right: 12%;
-    z-index: 6;
 
-    @media (max-width: 1024px) {
-      right: 15%;
-      bottom: 35%;
-    }
+  /* Tablette paysage */
+  @media (max-width: 1024px) and (orientation: landscape) {
+    left: 31%;
+    top: 83%;
+  }
 
-    @media (max-width: 768px) {
-      right: 20%;
-      bottom: 35%;
-      text-align: left;
-    }
+  /* Mobile L paysage */
+  @media (max-width: 926px) and (orientation: landscape) {
+    left: 30%;
+    top: 88%;
+  }
 
-    @media (max-width: 480px) {
-      right: 15%;
-      bottom: 40%;
-    }
+  /* Mobile M paysage */
+  @media (max-width: 768px) and (orientation: landscape) {
+    left: 28%;
+    top: 72%;
+  }
 
-    @media (max-width: 380px) {
-      right: 15%;
-      bottom: 40%;    }
+  /* Mobile S paysage */
+  @media (max-width: 640px) and (orientation: landscape) {
+    left: 26%;
+    top: 70%;
+  }
 
     /* Texte invisible par défaut */
     p {
       opacity: 0;
       transform: translateX(-20px);
       transition: opacity 0.4s ease, transform 0.4s ease;
-      font-size: 30px;
+      font-size: clamp(8px, 2vw + 1px, 35px);
       color: white;
       line-height: 1.3;
       margin: 0;
-      /* ← AJOUT : réinitialiser les marges */
       padding: 0;
-      /* ← AJOUT : réinitialiser les paddings */
-
-      /* ← AJOUT : normalisation Firefox */
       -moz-osx-font-smoothing: grayscale;
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
-
-      /* ← AJOUT : forcer le box-sizing */
       box-sizing: border-box;
-
-      @media (max-width: 1024px) {
-        font-size: 18px;
-      }
-
-      @media (max-width: 768px) {
-        font-size: 15px;
-        margin-left: 0;
-      }
-
-      @media (max-width: 480px) {
-        font-size: 9px;
-      }
-
-      @media (max-width: 380px) {
-        font-size: 7px;
-      }
 
       &:nth-child(1) {
         margin-left: 0;
@@ -156,60 +190,32 @@
       }
 
       &:nth-child(2) {
-        margin-left: 5vw;
+        margin-left: 8vw;
         animation-delay: 0.6s;
-
-        @media (max-width: 768px) {
-          margin-left: 4vw;
-        }
       }
 
       &:nth-child(3) {
-        margin-left: 10vw;
+        margin-left: 16vw;
         animation-delay: 1s;
-
-        @media (max-width: 768px) {
-          margin-left: 8vw;
-        }
       }
     }
-  }
 
-  /* Animation auto sur tablette/mobile */
-  .splash__text.is-active p {
-    opacity: 1;
-    transform: translateX(0);
-  }
+    /* Animation auto sur tablette/mobile */
+    &.is-active p {
+      opacity: 1;
+      transform: translateX(0);
 
-  /* Décalage progressif comme sur hover */
-  .splash__text.is-active p:nth-child(1) {
-    transition-delay: 0.1s;
-  }
+      &:nth-child(1) {
+        transition-delay: 0.1s;
+      }
 
-  .splash__text.is-active p:nth-child(2) {
-    transition-delay: 0.3s;
-  }
+      &:nth-child(2) {
+        transition-delay: 0.3s;
+      }
 
-  .splash__text.is-active p:nth-child(3) {
-    transition-delay: 0.5s;
-  }
-
-  /* Apparition progressive au hover du link */
-  &__link-center:hover~.splash__text p:nth-child(1) {
-    opacity: 1;
-    transform: translateX(0);
-    transition-delay: 0.1s;
-  }
-
-  &__link-center:hover~.splash__text p:nth-child(2) {
-    opacity: 1;
-    transform: translateX(0);
-    transition-delay: 0.3s;
-  }
-
-  &__link-center:hover~.splash__text p:nth-child(3) {
-    opacity: 1;
-    transform: translateX(0);
-    transition-delay: 0.5s;
+      &:nth-child(3) {
+        transition-delay: 0.5s;
+      }
+    }
   }
 }
