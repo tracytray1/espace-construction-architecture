@@ -137,7 +137,7 @@
     /* TABLETTE PORTRAIT (iPad Air, iPad Pro 11", Surface Pro 7) */
     @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
       left: 33%;
-      top: 62%;
+      top: 66.6%;
     }
 
     /* iPad Pro 12.9" portrait */
@@ -167,24 +167,44 @@
     /* Surface Pro 7 paysage (912x1368) */
     @media (min-width: 912px) and (max-width: 1368px) and (orientation: landscape) {
       left: 31.5%;
-      top: 83.5%;
+      top: 80.5%;
     }
 
     /* MOBILE L */
     @media (max-width: 768px) and (orientation: portrait) {
       left: 31%;
-      top: 58.9%;
+      top: 63.9%;
+    }
+
+    /* MOBILE M+ — entre 480px et 768px */
+    @media (min-width: 637px) and (max-width: 768px) and (orientation: portrait) {
+      left: 31.8%;
+      /* valeur intermédiaire */
+      top: 64.5%;
+      /* valeur intermédiaire */
+    }
+
+    @media (min-width: 583px) and (max-width: 637px) and (orientation: portrait) {
+      left: 31.8%;
+      /* valeur intermédiaire */
+      top: 62.5%;
+      /* valeur intermédiaire */
+    }
+
+    @media (max-width: 582px) and (orientation: portrait) {
+      left: 31%;
+      top: 61%;
     }
 
     /* MOBILE M */
     @media (max-width: 480px) and (orientation: portrait) {
-      left: 32.4%;
+      left: 30.5%;
       top: 59%;
     }
 
     /* MOBILE S */
     @media (max-width: 380px) and (orientation: portrait) {
-      left: 29.5%;
+      left: 33.4%;
       top: 59.4%;
     }
 
