@@ -17,6 +17,17 @@
     object-position: center;
     z-index: 1;
     transition: all 0.3s ease;
+
+    /* Tablette portrait - image complète sans rogner */
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+      object-fit: contain;
+      background-color: white;
+    }
+
+    /* Tablette paysage - conserver cover */
+    @media (orientation: landscape) and (min-width: 768px) {
+      object-fit: cover;
+    }
   }
 
   /* ============================
@@ -107,67 +118,93 @@
     }
   }
 
-/* ============================
-   TEXTE SPLASH
-============================= */
-&__text {
-  position: absolute;
-  left: 31.9%;
-  top: 82.6%;
-  transform: translateY(-50%);
-  z-index: 6;
-
-  /* TABLETTE */
-  @media (max-width: 1024px) {
-    left: 29.3%;
-    top: 79.3%;
-  }
-
-  /* MOBILE L */
-  @media (max-width: 768px) {
-    left: 31%;
-    top: 63.6%;
-  }
-
-  /* MOBILE M */
-  @media (max-width: 480px) {
-    left: 32.4%;
-    top: 59%;
-  }
-
-  /* MOBILE S */
-  @media (max-width: 380px) {
-    left: 33.4%;
-    top: 59.4%;
-  }
-
   /* ============================
-     MODE PAYSAGE (LANDSCAPE)
+     TEXTE SPLASH
   ============================= */
+  &__text {
+    position: absolute;
+    left: 31.9%;
+    top: 82.6%;
+    transform: translateY(-50%);
+    z-index: 6;
 
-  /* Tablette paysage */
-  @media (max-width: 1024px) and (orientation: landscape) {
-    left: 31%;
-    top: 83%;
-  }
+    /* DESKTOP LARGE */
+    @media (min-width: 1440px) {
+      left: 31.9%;
+      top: 82.6%;
+    }
 
-  /* Mobile L paysage */
-  @media (max-width: 926px) and (orientation: landscape) {
-    left: 30%;
-    top: 88%;
-  }
+    /* TABLETTE PORTRAIT (iPad Air, iPad Pro 11", Surface Pro 7) */
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+      left: 33%;
+      top: 62%;
+    }
 
-  /* Mobile M paysage */
-  @media (max-width: 768px) and (orientation: landscape) {
-    left: 28%;
-    top: 72%;
-  }
+    /* iPad Pro 12.9" portrait */
+    @media (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+      left: 33%;
+      top: 62%;
+    }
 
-  /* Mobile S paysage */
-  @media (max-width: 640px) and (orientation: landscape) {
-    left: 26%;
-    top: 70%;
-  }
+    /* TABLETTE PAYSAGE générique */
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+      left: 31%;
+      top: 83%;
+    }
+
+    /* iPad Air paysage (820x1180) */
+    @media (min-width: 820px) and (max-width: 1180px) and (orientation: landscape) {
+      left: 30%;
+      top: 82%;
+    }
+
+    /* iPad Pro 11" paysage (834x1194) */
+    @media (min-width: 834px) and (max-width: 1194px) and (orientation: landscape) {
+      left: 31%;
+      top: 83%;
+    }
+
+    /* Surface Pro 7 paysage (912x1368) */
+    @media (min-width: 912px) and (max-width: 1368px) and (orientation: landscape) {
+      left: 31.5%;
+      top: 83.5%;
+    }
+
+    /* MOBILE L */
+    @media (max-width: 768px) and (orientation: portrait) {
+      left: 31%;
+      top: 63.6%;
+    }
+
+    /* MOBILE M */
+    @media (max-width: 480px) and (orientation: portrait) {
+      left: 32.4%;
+      top: 59%;
+    }
+
+    /* MOBILE S */
+    @media (max-width: 380px) and (orientation: portrait) {
+      left: 33.4%;
+      top: 59.4%;
+    }
+
+    /* Mobile L paysage */
+    @media (max-width: 926px) and (orientation: landscape) and (max-height: 500px) {
+      left: 35%;
+      top: 90%;
+    }
+
+    /* Mobile M paysage */
+    @media (max-width: 768px) and (orientation: landscape) and (max-height: 450px) {
+      left: 28%;
+      top: 85%;
+    }
+
+    /* Mobile S paysage */
+    @media (max-width: 640px) and (orientation: landscape) and (max-height: 400px) {
+      left: 26%;
+      top: 82%;
+    }
 
     /* Texte invisible par défaut */
     p {
@@ -184,6 +221,16 @@
       text-rendering: optimizeLegibility;
       box-sizing: border-box;
 
+      /* Ajustement taille police tablettes */
+      @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: clamp(12px, 1.8vw + 1px, 28px);
+      }
+
+      /* Ajustement taille police paysage */
+      @media (orientation: landscape) and (max-height: 600px) {
+        font-size: clamp(13px, 2vh + 1px, 22px);
+      }
+
       &:nth-child(1) {
         margin-left: 0;
         animation-delay: 0.2s;
@@ -192,11 +239,31 @@
       &:nth-child(2) {
         margin-left: 8vw;
         animation-delay: 0.6s;
+
+        /* Réduire espacement tablette portrait */
+        @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+          margin-left: 6vw;
+        }
+
+        /* Réduire espacement paysage */
+        @media (orientation: landscape) {
+          margin-left: 5vw;
+        }
       }
 
       &:nth-child(3) {
         margin-left: 16vw;
         animation-delay: 1s;
+
+        /* Réduire espacement tablette portrait */
+        @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+          margin-left: 12vw;
+        }
+
+        /* Réduire espacement paysage */
+        @media (orientation: landscape) {
+          margin-left: 10vw;
+        }
       }
     }
 
