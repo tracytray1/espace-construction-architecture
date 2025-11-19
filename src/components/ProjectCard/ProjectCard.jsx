@@ -33,32 +33,33 @@ const ProjectCard = ({ project, allImagesLoaded, index }) => {
     >
       <div className="image-container">
         <Link to={`/projets/${id}`} onClick={handleClickMobile}>
-          <img
-            src={imageUrl}
-            alt={projet}
-            width={800} height={600}
-            className={`project-image ${allImagesLoaded ? 'loaded' : ''}`}
-          />
+          <div className="image-wrapper">
+            <img
+              src={imageUrl}
+              alt={projet}
+              width={800} height={600}
+              className={`project-image ${allImagesLoaded ? 'loaded' : ''}`}
+            />
 
-        <div
-          className={`overlay ${isHovered ? 'visible' : ''}`}
-          aria-hidden="true"
-        />
+            <div
+              className={`overlay ${isHovered ? 'visible' : ''}`}
+              aria-hidden="true"
+            />
 
-        <div className={`project-body-container ${isHovered ? 'visible' : ''}`}>
-          <div className='project-body-container-logo'>
-              <LogoEspaceConstructionSansTexte />
+            <div className={`project-body-container ${isHovered ? 'visible' : ''}`}>
+              <div className='project-body-container-logo'>
+                <LogoEspaceConstructionSansTexte />
+              </div>
+              <div className='project-body-container-detail'>
+                <p>{projet}</p>
+                <p>{ville}</p>
+                <p>{description}</p>
+              </div>
+            </div>
           </div>
-          <div className='project-body-container-detail'>
-            <p>{projet}</p>
-            <p>{ville}</p>
-            <p>{description}</p>
-          </div>
-        </div>
         </Link>
       </div>
     </div>
-  );
-}
+  );}
 
 export default ProjectCard
