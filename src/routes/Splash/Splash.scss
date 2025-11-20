@@ -93,10 +93,6 @@
       height: 5.2%;
     }
 
-    /* Hover → effet sur le masque */
-    &:hover .splash__mask--center::after {
-      opacity: 1;
-    }
 
     /* Apparition progressive au hover du link */
     &:hover~.splash__text p:nth-child(1) {
