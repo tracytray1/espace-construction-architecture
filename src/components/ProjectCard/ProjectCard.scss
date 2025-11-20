@@ -2,7 +2,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  //border: 1px solid #ddd;
   overflow: hidden;
   background: #fff;
   cursor: pointer;
@@ -11,56 +10,33 @@
   opacity: 0;
   transition: opacity 0.3s ease;
 
-  /* Apparition simple quand chargé */
   &.loaded {
     opacity: 1;
   }
 
-  /* Conteneur image avec aspect-ratio uniforme */
-    .image-container {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 16 / 10;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-    /* Fallback pour navigateurs sans support aspect-ratio */
-    &::before {
-      content: "";
-      display: block;
-      width: 100%;
-      padding-top: calc(100% * 10 / 16);
-      /* 16:10 = 62.5% */
-    }
-
-    /* Cache le pseudo-element si aspect-ratio est supporté */
-    @supports (aspect-ratio: 1 / 1) {
-      &::before {
-        display: none;
-      }
-    }
+  /* Conteneur image qui s'adapte à l'image */
+  .image-container {
+    position: relative;
+    width: 100%;
+    /* Pas d'aspect-ratio fixe, le conteneur s'adapte à l'image */
   }
 
-    .image-wrapper {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+    display: block;
+    line-height: 0;
+    /* Élimine l'espace sous l'image */
+  }
 
-  /* Image entière, jamais tronquée */
+  /* Image qui garde ses proportions naturelles */
   .project-image {
     display: block;
-    width: 100% !important;
-    height: 100% !important;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    /* ← Affiche l'image complète */
+    width: 100%;
+    height: auto;
+    /* Hauteur automatique pour garder les proportions */
+    object-fit: cover;
+    /* cover au lieu de contain pour remplir l'espace */
     object-position: center;
     background-color: transparent;
     z-index: 0;
@@ -72,7 +48,7 @@
     }
   }
 
-  /* Overlay avec animation scale */
+  /* Overlay */
   .overlay {
     position: absolute;
     inset: 0;
@@ -86,7 +62,7 @@
     }
   }
 
-  /* Conteneur du texte avec animation translateY */
+  /* Conteneur du texte */
   .project-body-container {
     position: absolute;
     inset: 0;
@@ -127,6 +103,7 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      gap: 18px;
     }
 
     p {
@@ -138,7 +115,6 @@
     }
   }
 
-  /* Accessibilité : animation au focus clavier */
   &:focus-within {
     .overlay {
       transform: translateZ(0) scale(1);
@@ -157,28 +133,47 @@
 
 /* Tablette */
 @media (max-width: 768px) {
-  .projects-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
-    padding: 0.5rem;
-  }
-
   .project-item {
-    .image-container {
-      aspect-ratio: 4 / 3; // Ratio légèrement plus carré sur tablette
+    /* Pas de changement d'aspect-ratio, l'image garde ses proportions naturelles */
+
+    .project-body-container {
+      padding: 0.75rem;
+      /* Légèrement moins de padding sur tablette */
+      column-gap: 10px;
+
+      .project-body-container-logo {
+        max-width: 40px;
+        max-height: 40px;
+      }
+
+      p {
+        font-size: 0.9rem;
+        /* Texte légèrement plus petit */
+      }
     }
   }
 }
 
 /* Mobile */
 @media (max-width: 480px) {
-  .projects-container {
-    grid-template-columns: 1fr;
-  }
-
   .project-item {
-    .image-container {
-      aspect-ratio: 3 / 2; // Image un peu plus haute sur mobile
+    /* L'image garde toujours ses proportions naturelles */
+
+    .project-body-container {
+      padding: 0.5rem;
+      column-gap: 8px;
+
+      .project-body-container-logo {
+        max-width: 35px;
+        max-height: 35px;
+      }
+
+      .project-body-container-detail {
+        p {
+          font-size: 0.85rem;
+          /* Texte encore plus petit sur mobile */
+        }
+      }
     }
   }
 }
