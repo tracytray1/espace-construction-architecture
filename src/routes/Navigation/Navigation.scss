@@ -85,7 +85,7 @@
     }
 
         .nav-links-container {
-          position: absolute;
+          position: fixed;
           top: 90px;
           right: 0;
           display: flex; // toujours présent
@@ -97,7 +97,7 @@
           z-index: 1000;
 
           /* état fermé */
-          transform: translateX(110%); // hors écran
+          transform: translateX(100%); // hors écran
           opacity: 0;
           visibility: hidden; // évite la navigation au clavier
           pointer-events: none; // évite les clics
