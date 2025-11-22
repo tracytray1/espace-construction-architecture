@@ -22,17 +22,11 @@ const Splash = () => {
 
   return (
     <div className="splash">
-      <picture>
-        {/* Si l'écran est <= 768px, on charge l'image mobile */}
-        <source srcSet={splashMobile} media="(max-width: 768px)" />
-
-        {/* Sinon, on charge l'image desktop par défaut */}
-        <img
-          src={splashDesktop}
-          alt="Espace Construction Architecture - Entrer"
-          className="splash__image"
-        />
-      </picture>
+      <img
+        src={viewportWidth < 768 ? splashMobile : splashDesktop}
+        alt="Espace Construction Architecture - Entrer"
+        className="splash__image"
+      />
 
       <Link to="/home" className="splash__link-center" aria-label="Entrer sur le site">
         <div className="splash__mask--center" />
