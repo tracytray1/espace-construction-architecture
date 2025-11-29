@@ -32,11 +32,9 @@ const Splash = () => {
         <div className="splash__mask--center" />
       </Link>
 
-      <div className={`splash__text ${textActive ? "is-active" : ""}`}>
-        <p>Utiliser le climat comme ressource</p>
-        <p>Concevoir avec exigence et écoute</p>
-        <p>Maîtriser les contraintes constructives</p>
-      </div>
+
+
+
     </div>
   );
 };
