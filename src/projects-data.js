@@ -6,6 +6,7 @@ export const PROJECTS_DATA =
     {
       "id": 1,
       "title": "Villa Aganahi Abomey Calavi",
+      "slug":"maison-individuelle-abomey-calavi",
       "imageUrl": images.maisonAganahi,
       "imagesProjet": [
         images.maisonAganahiPlans,
@@ -33,6 +34,7 @@ export const PROJECTS_DATA =
     {
       "id": 2,
       "title": "Villa De Luvis Lagny-sur-Marne",
+      "slug": "maison-individuelle-lagny-sur-marne",
       "imageUrl": images.villaDeLutiis,
       "imagesProjet": [
         images.villaDeLutiisPlans,
@@ -60,6 +62,7 @@ export const PROJECTS_DATA =
     {
       "id": 3,
       "title": "Maison Duclos Douy-la-Ramée",
+      "slug": "extension-maison-douy-la-ramee",
       "imageUrl": images.maisonDuclos,
       "imagesProjet": [
         images.maisonDuclosPlans,
@@ -85,6 +88,7 @@ export const PROJECTS_DATA =
   {
     "id": 4,
     "title": "Villa Illemassene Bois-Le-Roi",
+    "slug": "maison-individuelle-bois-le-roi",
     "imageUrl": images.villaIllemassene,
     "imagesProjet": [
       images.villaIllemassene1,
@@ -107,6 +111,7 @@ export const PROJECTS_DATA =
   {
     "id": 5,
     "title": "Villa Mehran",
+    "slug": "maison-individuelle-plaisir",
     "imageUrl": images.villaMahroum,
     "imagesProjet": [
       images.villaMahroumPlans,
@@ -133,6 +138,7 @@ export const PROJECTS_DATA =
   {
     "id": 6,
     "title": "Maison Fayol Dampmart",
+    "slug": "maison-individuelle-dampmart",
     "imageUrl": images.maisonFayol,
     "imagesProjet": [
       images.maisonFayolPlans,
@@ -159,6 +165,7 @@ export const PROJECTS_DATA =
   {
     "id": 7,
     "title": "Pavillon Petit Havre Le Gosier Guadeloupe",
+    "slug": "habitation-secondaire-le-gosier",
     "imageUrl": images.pavillonPetitHavre,
     "imagesProjet": [
       images.pavillonPetitHavrePlans1,
@@ -191,6 +198,7 @@ export const PROJECTS_DATA =
     {
       "id": 8,
       "title": "Villa Bien Desiré Saint François Guadeloupe",
+      "slug": "maison-individuelle-saint-francois",
       "imageUrl": images.villaBienDesire,
       "imagesProjet": [
         images.villaBienDesirePlans,
@@ -250,6 +258,7 @@ export const PROJECTS_DATA =
   {
     "id": 10,
     "title": "Maison Salles Saint-Maur-des-Fossés",
+    "slug": "surelevation-saint-maur-des-fosses",
     "imageUrl": images.maisonSalles,
     "imageUrlHero": images.maisonSalles2,
     "imagesProjet": [
@@ -276,6 +285,7 @@ export const PROJECTS_DATA =
   {
     "id": 11,
     "title": "Maisons Champs Fleuris Châtillon",
+    "slug": "maisons-mitoyennes-chatillon",
     "imageUrl": images.maisonsChampsFleuris,
     "imagesProjet": [
       images.maisonsChampsFleurisPlans1,
@@ -303,6 +313,7 @@ export const PROJECTS_DATA =
   {
     "id": 12,
     "title": "Collectif Colonel Fabien Dammarie-les-Lys 1",
+    "slug": "collectifs-residentiels-dammarie-les-lys",
     "imageUrl": images.collectifColonelFabienv1,
     "imagesProjet": [
       images.collectifColonelFabienv1Plans,
@@ -332,6 +343,7 @@ export const PROJECTS_DATA =
   {
     "id": 13,
     "title": "Collectif Colonel Fabien Dammarie-les-Lys 2",
+    "slug": "collectifs-residentiels-dammarie-les-lys-2",
     "imageUrl": images.collectifColonelFabienv2,
     "imagesProjet": [
       images.collectifColonelFabienv2Plans,
@@ -362,6 +374,7 @@ export const PROJECTS_DATA =
   {
     "id": 14,
     "title": "Villas Des Varennes Saint-Germain-Les-Arpajons",
+    "slug": "maisons-mitoyennes-saint-germain-les-arpajons",
     "imageUrl": images.villasDesVarennes,
     "imagesProjet": [
       images.villasDesVarennesPlans,
@@ -385,6 +398,7 @@ export const PROJECTS_DATA =
   {
     "id": 15,
     "title": "Collectif Maréchal Foch Dammarie lès Lys",
+    "slug": "collectif-logements-dammarie-les-lys",
     "imageUrl": images.collectifMarechalFoch,
     "imageUrlHero": images.collectifMarechalFoch3,
     "imagesProjet": [
@@ -413,6 +427,7 @@ export const PROJECTS_DATA =
   {
     "id": 16,
     "title": "Immeuble Choisy Alfortville",
+    "slug": "immeuble-alfortville",
     "imageUrl": images.immeubleChoisy,
     "imagesProjet": [
       images.immeubleChoisy1,
@@ -445,6 +460,7 @@ export const PROJECTS_DATA =
   {
     "id": 17,
     "title": "Immeuble Division Leclerc Le Bourget",
+    "slug": "immeuble-le-bourget",
     "imageUrl": images.immeubleDivisionLeclerc,
     "imagesProjet": [
       images.immeubleDivisionLeclercPlans1,
@@ -470,6 +486,7 @@ export const PROJECTS_DATA =
   {
     "id": 18,
     "title": "Immeuble des Cerisiers Thorigny sur Marne",
+    "slug": "immeuble-thorigny-sur-marne",
     "imageUrl": images.immeubleCerisiers,
     "imagesProjet": [
       images.immeubleCerisiers1,
