@@ -1,0 +1,2 @@
+# Redirection du sous-domaine Netlify vers le domaine principal
+https://espace-construction-architecture.netlify.app/*  https://www.atelier-eca.com/:splat  301!
