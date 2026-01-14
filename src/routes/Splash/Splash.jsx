@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import splashDesktop from '../../assets/images/splash/villa-mahroum-desktop.jpg';
+import splashDesktop from '../../assets/images/splash/villa-mahroum-desktop.png';
 import splashMobile from '../../assets/images/splash/villa-mahroum-mobile.jpg';
 import './Splash.scss';
 

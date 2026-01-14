@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import { usePageMeta } from '../../hooks/usePageMeta';
 import { PROJECTS_DATA } from '../../projects-data';
 import ProjectInfo from "../../components/ProjectInfo/ProjectInfo";
 import ProjectDetailPhotos from "../../components/ProjectDetailPhotos/ProjectDetailPhotos";
@@ -9,8 +10,8 @@ import ProjectFooter from '../../components/ProjectFooter/ProjectFooter'
 import './Projet.scss'
 
 const Projet = () => {
-  const { id } = useParams();
-  const foundProject = PROJECTS_DATA.find(p => p.id === parseInt(id));
+  const { slug } = useParams();
+  const foundProject = PROJECTS_DATA.find(p => p.slug === slug);
 
   if (!foundProject) {
     return (
@@ -21,6 +22,11 @@ const Projet = () => {
       </div>
     );
   }
+
+  usePageMeta({
+    title: `${foundProject.projet} — ${foundProject.ville} | Atelier ECA`,
+    description: `${foundProject.projet}, ${foundProject.programme} situé à ${foundProject.ville}. Projet d’architecture conçu par l’agence Atelier ECA.`,
+  });
 
   return (
     <div className='project-detail_wrapper'>

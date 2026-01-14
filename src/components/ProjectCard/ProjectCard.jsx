@@ -6,7 +6,7 @@ import LogoEspaceConstructionSansTexte from '../../assets/logo-espace-constructi
 import './ProjectCard.scss'
 
 const ProjectCard = ({ project, allImagesLoaded, index }) => {
-  const { imageUrl, projet, ville, description, id } = project;
+  const { imageUrl, projet, ville, description, id, slug } = project;
   const [isHovered, setIsHovered] = useState(false);
   const [isActive, setIsActive] = useState(false);
 
@@ -32,7 +32,7 @@ const ProjectCard = ({ project, allImagesLoaded, index }) => {
       onMouseLeave={handleMouseLeave}
     >
       <div className="image-container">
-        <Link to={`/projets/${id}`} onClick={handleClickMobile}>
+        <Link to={`/projets/${slug}`} onClick={handleClickMobile}>
           <div className="image-wrapper">
             <img
               src={imageUrl}

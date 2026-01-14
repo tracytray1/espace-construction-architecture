@@ -24,7 +24,7 @@ function App() {
           <Route element={<Navigation />}>
             <Route path="home" element={<PageTransition><Home /></PageTransition>} />
             <Route path="contact" element={<PageTransition><Contact /></PageTransition>} />
-            <Route path="projets/:id" element={<PageTransition><Projet /></PageTransition>} />
+            <Route path="projets/:slug" element={<PageTransition><Projet /></PageTransition>} />
             <Route path="a-propos" element={<PageTransition><AboutPage /></PageTransition>} />
           </Route>
         </Routes>

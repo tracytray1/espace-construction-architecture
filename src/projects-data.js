@@ -18,7 +18,7 @@ export const PROJECTS_DATA =
       "description": "Maison individuelle",
       "catégorie": "projet tropiques",
       "site": "Abomey Calavi, Bénin",
-      "ville": "Abomey Calavi",
+      "ville": "Abomey Calavi, Bénin",
       "programme": "Maison individuelle",
       "surfaceHabitable": "194,84 m²",
       "maitriseOuvrage": "Aldwin Aganahi",
@@ -62,7 +62,7 @@ export const PROJECTS_DATA =
     {
       "id": 3,
       "title": "Maison Duclos Douy-la-Ramée",
-      "slug": "extension-maison-douy-la-ramee",
+      "slug": "extension-maison-individuelle-douy-la-ramee",
       "imageUrl": images.maisonDuclos,
       "imagesProjet": [
         images.maisonDuclosPlans,
@@ -230,6 +230,7 @@ export const PROJECTS_DATA =
     {
       "id": 9,
       "title": "Gîtes Fonrose",
+      "slug": "maison-individuelle-saint-francois",
       "imageUrl": images.gitesFonrose,
       "imagesProjet": [
         images.gitesFonrosePlans,
@@ -258,7 +259,7 @@ export const PROJECTS_DATA =
   {
     "id": 10,
     "title": "Maison Salles Saint-Maur-des-Fossés",
-    "slug": "surelevation-saint-maur-des-fosses",
+    "slug": "surelevation-maison-saint-maur-des-fosses",
     "imageUrl": images.maisonSalles,
     "imageUrlHero": images.maisonSalles2,
     "imagesProjet": [
@@ -427,7 +428,7 @@ export const PROJECTS_DATA =
   {
     "id": 16,
     "title": "Immeuble Choisy Alfortville",
-    "slug": "immeuble-alfortville",
+    "slug": "immeuble-logements-alfortville",
     "imageUrl": images.immeubleChoisy,
     "imagesProjet": [
       images.immeubleChoisy1,
@@ -460,7 +461,7 @@ export const PROJECTS_DATA =
   {
     "id": 17,
     "title": "Immeuble Division Leclerc Le Bourget",
-    "slug": "immeuble-le-bourget",
+    "slug": "immeuble-logements-le-bourget",
     "imageUrl": images.immeubleDivisionLeclerc,
     "imagesProjet": [
       images.immeubleDivisionLeclercPlans1,
@@ -486,7 +487,7 @@ export const PROJECTS_DATA =
   {
     "id": 18,
     "title": "Immeuble des Cerisiers Thorigny sur Marne",
-    "slug": "immeuble-thorigny-sur-marne",
+    "slug": "immeuble-logements-thorigny-sur-marne",
     "imageUrl": images.immeubleCerisiers,
     "imagesProjet": [
       images.immeubleCerisiers1,
