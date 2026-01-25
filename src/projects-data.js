@@ -230,7 +230,7 @@ export const PROJECTS_DATA =
     {
       "id": 9,
       "title": "Gîtes Fonrose",
-      "slug": "maison-individuelle-saint-francois",
+      "slug": gite-tourisme-fonrose",
       "imageUrl": images.gitesFonrose,
       "imagesProjet": [
         images.gitesFonrosePlans,
