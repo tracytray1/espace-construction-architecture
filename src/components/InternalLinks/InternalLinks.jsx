@@ -26,7 +26,7 @@ const InternalLinks = ({ allProjects, foundProject }) => {
 
 // Composant ProjectCard interne avec le même design que la homepage
 const InternalProjectCard = ({ project }) => {
-  const { imageUrl, projet, ville, description, id } = project;
+  const { imageUrl, projet, ville, description, id, slug } = project;
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
