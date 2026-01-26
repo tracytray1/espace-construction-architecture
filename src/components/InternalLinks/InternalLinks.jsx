@@ -44,7 +44,7 @@ const InternalProjectCard = ({ project }) => {
       onMouseLeave={handleMouseLeave}
     >
       <div className="image-container">
-        <Link to={`/projets/${id}`} onClick={() => window.scrollTo(0, 0)} >
+        <Link to={`/projets/${slug}`} onClick={() => window.scrollTo(0, 0)} >
           <img
             src={imageUrl}
             alt={projet}
