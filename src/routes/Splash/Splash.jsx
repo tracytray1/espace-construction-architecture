@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { usePageMeta } from '../../hooks/usePageMeta'
 import { useEffect, useState } from 'react';
 import splashDesktop from '../../assets/images/splash/villa-mahroum-desktop.png';
 import splashMobile from '../../assets/images/splash/villa-mahroum-mobile.jpg';
@@ -7,6 +8,11 @@ import './Splash.scss';
 const Splash = () => {
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
   const [textActive, setTextActive] = useState(false);
+
+  usePageMeta({
+    title: `Atelier ECA — Espace Construction Architecture`,
+    description: `Atelier ECA, agence d'architecture basée à Paris. Découvrez nos projets résidentiels et commerciaux.`,
+  });
 
   useEffect(() => {
     const handleResize = () => setViewportWidth(window.innerWidth);
@@ -31,10 +37,6 @@ const Splash = () => {
       <Link to="/home" className="splash__link-center" aria-label="Entrer sur le site">
         <div className="splash__mask--center" />
       </Link>
-
-
-
-
     </div>
   );
 };
