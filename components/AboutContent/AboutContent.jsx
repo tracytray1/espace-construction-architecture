@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import './AboutContent.scss'
 import { PHOTOS_ABOUT } from "@/public/images/a-propos/photos-about";
 
@@ -10,8 +9,8 @@ const AboutContent = () => {
       <div className='about-section about-intro'>
         <div className='about-intro-image'>
           <img
-            src={PHOTOS_ABOUT[0].title}
-            alt={PHOTOS_ABOUT[0].altTitle}
+            src="/images/a-propos/portrait-lucas-devienne.jpg"
+            alt='portrait Lucas Devienne'
             width={300}
             height={400}
             style={{ width: '100%', height: 'auto' }}
@@ -34,8 +33,8 @@ const AboutContent = () => {
         </div>
         <div className='about-concept-image'>
           <img
-            src={PHOTOS_ABOUT[1].title}
-            alt={PHOTOS_ABOUT[1].altTitle}
+            src="/images/a-propos/plans-andelu.jpg"
+            alt="plan projet Andelu"
             width={600}
             height={800}
             style={{ width: '100%', height: 'auto' }}
@@ -46,8 +45,8 @@ const AboutContent = () => {
       <div className='about-section about-construction'>
         <div className='about-construction-image'>
           <img
-            src={PHOTOS_ABOUT[2].title}
-            alt={PHOTOS_ABOUT[2].altTitle}
+            src="/images/a-propos/plan.jpg"
+            alt="plan Saint Anne"
             width={500}
             height={700}
             style={{ width: '100%', height: 'auto' }}
