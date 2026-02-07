@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
 import './Splash.scss';
 
 const Splash = () => {
@@ -32,7 +31,7 @@ const Splash = () => {
 
   return (
     <div className="splash">
-      <Image
+      <img
         src={viewportWidth < 768 ? "/images/splash/villa-mahroum-mobile.jpg" : "/images/splash/villa-mahroum-desktop.png"}
         alt="Espace Construction Architecture - Entrer"
         className="splash__image"
