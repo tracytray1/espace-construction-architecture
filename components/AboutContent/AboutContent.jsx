@@ -9,7 +9,7 @@ const AboutContent = () => {
     <div className='about-content'>
       <div className='about-section about-intro'>
         <div className='about-intro-image'>
-          <Image
+          <img
             src={PHOTOS_ABOUT[0].title}
             alt={PHOTOS_ABOUT[0].altTitle}
             width={300}
@@ -33,7 +33,7 @@ const AboutContent = () => {
           <p>La notion de schéma implique également de garder de la <b>flexibilité</b> lors de la conception du projet. Bien que les intentions soient clairement définies, elles n'excluent pas de rester à <b>l'écoute de la maîtrise d'ouvrage</b> et d'intégrer sa <b>participation</b>. La <b>maquette</b> numérique devient alors un outil de communication primordial en facilitant la projection. Le schéma est également à l'épreuve des <b>transformations</b> qui surviendront suite aux échanges avec les professionnels lors des différentes phases du processus de projet. Que ce soit pour des questions urbanistiques, constructives ou économiques, il est souvent nécessaire <b>d'adapter</b> certains éléments tout en <b>respectant les principes de conception</b>.</p>
         </div>
         <div className='about-concept-image'>
-          <Image
+          <img
             src={PHOTOS_ABOUT[1].title}
             alt={PHOTOS_ABOUT[1].altTitle}
             width={600}
@@ -45,7 +45,7 @@ const AboutContent = () => {
 
       <div className='about-section about-construction'>
         <div className='about-construction-image'>
-          <Image
+          <img
             src={PHOTOS_ABOUT[2].title}
             alt={PHOTOS_ABOUT[2].altTitle}
             width={500}

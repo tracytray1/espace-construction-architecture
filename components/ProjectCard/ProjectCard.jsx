@@ -2,7 +2,6 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import './ProjectCard.scss';
 
 const ProjectCard = ({ project, allImagesLoaded, index }) => {
@@ -34,7 +33,7 @@ const ProjectCard = ({ project, allImagesLoaded, index }) => {
       <div className="image-container">
         <Link href={`/projets/${slug}`} onClick={handleClickMobile}>
           <div className="image-wrapper">
-            <Image
+            <img
               src={imageUrl}
               alt={`${projet} - ${ville}`}
               width={800}
@@ -51,7 +50,7 @@ const ProjectCard = ({ project, allImagesLoaded, index }) => {
 
             <div className={`project-body-container ${isHovered ? 'visible' : ''}`}>
               <div className="project-body-container-logo">
-                <Image
+                <img
                   src="/logo-espace-construction-blanc.svg"
                   alt="Logo ECA"
                   width={50}
