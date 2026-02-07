@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import './InternalLinks.scss';
 
 const InternalLinks = ({ allProjects, foundProject }) => {
@@ -48,7 +47,7 @@ const InternalProjectCard = ({ project }) => {
     >
       <div className="image-container">
         <Link href={`/projets/${slug}`} onClick={handleClick}>
-          <Image
+          <img
             src={imageUrl}
             alt={`${projet} - ${ville}`}
             width={800}
@@ -65,7 +64,7 @@ const InternalProjectCard = ({ project }) => {
 
           <div className={`project-body-container ${isHovered ? 'visible' : ''}`}>
             <div className="project-body-container-logo">
-              <Image
+              <img
                 src="/logo-espace-construction-blanc.svg"
                 alt="Logo ECA"
                 width={50}
