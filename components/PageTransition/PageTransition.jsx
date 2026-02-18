@@ -1,5 +1,5 @@
+'use client';
 import { motion } from 'framer-motion';
-import { useLayoutEffect } from 'react';
 
 const PageTransition = ({ children }) => {
   // scroll immédiatement avant le repaint (pour s'assurer d'être en haut)

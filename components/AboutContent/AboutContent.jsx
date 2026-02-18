@@ -1,7 +1,6 @@
 'use client';
 
 import './AboutContent.scss'
-import { PHOTOS_ABOUT } from "@/public/images/a-propos/photos-about";
 
 const AboutContent = () => {
   return (

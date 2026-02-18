@@ -20,8 +20,8 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `${foundProject.projet} — ${foundProject.ville}`,
-    description: `${foundProject.projet}, ${foundProject.programme} situé à ${foundProject.ville}. Projet d'architecture conçu par l'agence Atelier ECA.`,
+    title: `${foundProject.metaTitle}`,
+    description: `${foundProject.metaDescription}`,
     openGraph: {
       title: `${foundProject.projet} — ${foundProject.ville}`,
       description: foundProject.description,
