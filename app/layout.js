@@ -15,6 +15,16 @@ export const metadata = {
   },
   description: "Atelier ECA, agence d'architecture basée à Paris. Découvrez nos projets résidentiels et commerciaux.",
   metadataBase: new URL('https://www.atelier-eca.com'),
+  icons: {
+    icon: [
+      { url: '/images/favicons/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/images/favicons/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/images/favicons/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    shortcut: '/images/favicons/favicon-16x16.png',
+  },
   robots: 'index, follow',
   openGraph: {
     type: 'website',
